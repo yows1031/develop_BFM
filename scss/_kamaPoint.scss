@@ -1,0 +1,294 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.map {
+    background-image: url("#{$imgDir}kama.png");
+}
+
+.icon_genki {
+    width: 70px;
+    position: absolute;
+    top: 380px;
+    left: 1070px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 520px;
+        left: 325px;
+    }
+
+}
+
+.icon_nishimatsuya {
+    width: 70px;
+    position: absolute;
+    top: 490px;
+    left: 1065px;
+
+    @include sp {
+        width: 30px;
+        height: 20px;
+        top: 570px;
+        left: 335px;
+    }
+}
+
+.icon_daiso {
+    width: 60px;
+    position: absolute;
+    top: 560px;
+    left: 1085px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 655px;
+        left: 330px;
+    }
+}
+
+.icon_ainoya {
+    width: 70px;
+    position: absolute;
+    top: 425px;
+    left: 960px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 540px;
+        left: 285px;
+    }
+}
+
+.icon_miniStop {
+    width: 70px;
+    position: absolute;
+    top: 490px;
+    left: 960px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 590px;
+        left: 300px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.icon_daisyogun {
+    width: 60px;
+    position: absolute;
+    top: 580px;
+    left: 1020px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 680px;
+        left: 305px;
+    }
+}
+
+.icon_utahime {
+    width: 60px;
+    position: absolute;
+    top: 540px;
+    left: 1020px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 630px;
+        left: 305px;
+    }
+}
+
+.icon_routeIn {
+    width: 70px;
+    position: absolute;
+    top: 480px;
+    left: 830px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 585px;
+        left: 260px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.icon_seims {
+    width: 70px;
+    position: absolute;
+    top: 470px;
+    left: 755px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 575px;
+        left: 220px;
+    }
+}
+
+.icon_yoshinoya {
+    width: 70px;
+    position: absolute;
+    top: 470px;
+    left: 680px;
+
+    @include sp {
+        width: 30px;
+        height: 25px;
+        top: 575px;
+        left: 185px;
+    }
+}
+
+.icon_au {
+    width: 70px;
+    position: absolute;
+    top: 520px;
+    left: 730px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 610px;
+        left: 225px;
+    }
+}
+
+.icon_docomo {
+    width: 70px;
+    position: absolute;
+    top: 515px;
+    left: 600px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 605px;
+        left: 150px;
+    }
+}
+
+.icon_maruhan {
+    width: 70px;
+    position: absolute;
+    top: 575px;
+    left: 540px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 630px;
+        left: 145px;
+    }
+}
+
+.icon_softbank {
+    width: 70px;
+    position: absolute;
+    top: 490px;
+    left: 390px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 600px;
+        left: 100px;
+    }
+}
+
+.icon_york {
+    width: 60px;
+    position: absolute;
+    top: 530px;
+    left: 370px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 605px;
+        left: 60px;
+    }
+}
+
+.icon_kenmin {
+    width: 70px;
+    position: absolute;
+    top: 445px;
+    left: 300px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 560px;
+        left: 50px;
+    }
+}
+
+.icon_lowSon {
+    width: 70px;
+    position: absolute;
+    top: 425px;
+    left: 225px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 560px;
+        left: 5px;
+    }
+}
+
+.icon_wing {
+    width: 70px;
+    position: absolute;
+    top: 515px;
+    left: 185px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 610px;
+        left: 5px;
+    }
+}
+
+.icon_hureai {
+    width: 70px;
+    position: absolute;
+    top: 765px;
+    left: 200px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 785px;
+        left: 15px;
+    }
+}
