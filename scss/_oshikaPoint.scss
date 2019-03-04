@@ -1,0 +1,126 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.map {
+    background-image: url("#{$imgDir}oshika.png");
+}
+
+.icon_toyo {
+    width: 70px;
+    position: absolute;
+    top: 330px;
+    left: 810px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 480px;
+        left: 245px;
+    }
+
+}
+
+.icon_sougou {
+    width: 70px;
+    position: absolute;
+    top: 320px;
+    left: 730px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 480px;
+        left: 200px;
+    }
+
+}
+
+.icon_seishin {
+    width: 70px;
+    position: absolute;
+    top: 500px;
+    left: 300px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 600px;
+        left: 30px;
+    }
+
+}
+
+.icon_seiyu {
+    width: 70px;
+    position: absolute;
+    top: 550px;
+    left: 230px;
+    
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 635px;
+        left: 10px;
+    }
+
+    .spmode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+
+}
+
+.icon_hot_Maru {
+    width: 80px;
+    position: absolute;
+    top: 590px;
+    left: 180px;
+
+    @include sp {
+        width: 50px;
+        height: 50px;
+        top: 665px;
+        left: 5px;
+    }
+
+    .spmode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+
+}
+
+.icon_yoriiso {
+    width: 80px;
+    position: absolute;
+    top: 340px;
+    left: 955px;
+
+    @include sp {
+        width: 40px;
+        height: 30px;
+        top: 480px;
+        left: 300px;
+    }
+
+    .spmode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+
+}
