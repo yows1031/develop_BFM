@@ -1,0 +1,121 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.menuArea {
+    background-color: greenyellow;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+
+    @include sp {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.Area {
+    background-color: greenyellow;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    @include sp {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.map {
+    background-image: url("#{$imgDir}ogatsu_hagihama.png");
+}
+
+.icon_ogatsu {
+    position: absolute;
+    top: 200px;
+    left: 570px;
+
+    @include sp {
+        top: 390px;
+        left: 130px;
+    }
+
+}
+
+.icon_sougou {
+
+    width: 70px;
+    position: absolute;
+    top: 345px;
+    left: 930px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 480px;
+        left: 245px;
+    }
+}
+
+.icon_hospital  {
+    width: 70px;
+    position: absolute;
+    top: 330px;
+    left: 810px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 480px;
+        left: 295px;
+    }
+
+}
+
+.icon_jouhou {
+    width: 100px;
+    position: absolute;
+    top: 315px;
+    left: 260px;
+
+    @include sp {
+        width: 75px;
+        height: 25px;
+        top: 465px;
+        left: 5px;
+    }
+
+}
+
+.icon_hagihama  {
+    position: absolute;
+    top: 495px;
+    left: 575px;
+
+    @include sp {
+        top: 600px;
+        left: 130px;
+    }
+
+}
+
+.icon_vilege {
+    width: 70px;
+    position: absolute;
+    top: 615px;
+    left: 565px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 685px;
+        left: 150px;
+    }
+
+}
