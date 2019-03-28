@@ -1,0 +1,110 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/kitakami.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/kitakami.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.button.is-info.is-outlined
+              p.fontSmall
+               | 北上高齢者
+               br
+               | 生活福祉センター
+            li.button.is-info.is-outlined
+              p.fontSmall
+               | 復興まちづくり
+               br
+               | 情報交流館
+            li.button.is-info.is-outlined
+              p.fontSmall
+               | 北上総合支所
+               br
+               | 北上保健センター
+            li.button.is-info.is-outlined
+              p 神割崎自然公園
+        // 地図メニュー
+        .map
+          .button.is-info.icon_life
+            p.fontSmall
+               | 北上高齢者
+               br
+               | 生活福祉センター
+          .button.is-info.icon_hukkou
+            p.fontSmall
+               | 復興まちづくり
+               br
+               | 情報交流館
+          .button.is-info.icon_sougou
+            p.fontSmall
+               | 北上総合支所
+               br
+               | 北上保健センター
+          .button.is-info.icon_park
+            p.fontSmall
+               | 神割崎
+               br
+               | 自然公園
+          
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')
