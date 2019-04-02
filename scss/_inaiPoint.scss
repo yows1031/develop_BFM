@@ -1,0 +1,137 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.map {
+    background-image: url("#{$imgDir}inai.png");
+}
+
+.icon_park {
+    width: 70px;
+    position: absolute;
+    top: 470px;
+    left: 430px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 580px;
+        left: 100px;
+    }
+}
+
+.icon_lowSon1 {
+    width: 70px;
+    position: absolute;
+    top: 460px;
+    left: 335px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 558px;
+        left: 35px;
+    }
+}
+
+.icon_miniStop {
+    width: 70px;
+    position: absolute;
+    top: 480px;
+    left: 260px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 585px;
+        left: 20px;
+    }
+}
+
+.icon_garden {
+    width: 70px;
+    position: absolute;
+    top: 400px;
+    left: 380px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 530px;
+        left: 70px;
+    }
+}
+
+.icon_lowSon2 {
+    width: 70px;
+    position: absolute;
+    top: 325px;
+    left: 380px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 475px;
+        left: 65px;
+    }
+}
+
+.icon_sougou {
+    width: 70px;
+    position: absolute;
+    top: 665px;
+    left: 930px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 715px;
+        left: 297px;
+    }
+}
+
+.icon_center {
+    width: 70px;
+    position: absolute;
+    top: 665px;
+    left: 858px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 720px;
+        left: 255px;
+    }
+}
+
+.icon_familiMart {
+    width: 70px;
+    position: absolute;
+    top: 740px;
+    left: 810px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 780px;
+        left: 250px;
+    }
+}
+
+.icon_raiful {
+    width: 70px;
+    position: absolute;
+    top: 285px;
+    left: 965px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 440px;
+        left: 300px;
+    }
+}

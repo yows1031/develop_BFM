@@ -1,0 +1,282 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.menuArea {
+    background-color: greenyellow;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+
+    @include sp {
+        height: 30px;
+        line-height: 30px
+    }
+}
+
+.Area {
+    background-color: greenyellow;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    @include sp {
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.map {
+    background-image: url("#{$imgDir}kanan.png");
+}
+
+.icon_maeyachi {
+    position: absolute;
+    top: 200px;
+    left: 175px;
+
+    @include sp {
+        top: 390px;
+        left: 5px;
+    }
+
+}
+
+.icon_sougou {
+
+    width: 70px;
+    position: absolute;
+    top: 290px;
+    left: 395px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 465px;
+        left: 65px;
+    }
+}
+
+.icon_hukushi {
+
+    width: 70px;
+    position: absolute;
+    top: 260px;
+    left: 315px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 425px;
+        left: 20px;
+    }
+}
+
+.icon_kananHall {
+
+    width: 70px;
+    position: absolute;
+    top: 380px;
+    left: 420px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 515px;
+        left: 75px;
+    }
+}
+
+.icon_library {
+
+    width: 70px;
+    position: absolute;
+    top: 417px;
+    left: 390px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 541px;
+        left: 45px;
+    }
+}
+
+.icon_display {
+
+    width: 70px;
+    position: absolute;
+    top: 417px;
+    left: 460px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 541px;
+        left: 106px;
+    }
+}
+
+.icon_kanomata {
+    position: absolute;
+    top: 200px;
+    left: 675px;
+
+    @include sp {
+        top: 390px;
+        left: 195px;
+    }
+
+}
+
+.icon_sevenEleven {
+
+    width: 70px;
+    position: absolute;
+    top: 210px;
+    left: 1060px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 395px;
+        left: 330px;
+    }
+}
+
+.icon_big {
+
+    width: 80px;
+    position: absolute;
+    top: 465px;
+    left: 800px;
+
+    @include sp {
+        width: 50px;
+        height: 20px;
+        top: 575px;
+        left: 220px;
+    }
+}
+
+.icon_hirobuchi {
+    position: absolute;
+    top: 503px;
+    left: 175px;
+
+    @include sp {
+        top: 605px;
+        left: 5px;
+    }
+
+}
+
+.icon_tsuruha {
+
+    width: 70px;
+    position: absolute;
+    top: 625px;
+    left: 575px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 690px;
+        left: 150px;
+    }
+}
+
+.icon_familyMart2 {
+
+    width: 70px;
+    position: absolute;
+    top: 655px;
+    left: 410px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 715px;
+        left: 50px;
+    }
+}
+
+
+
+.icon_sue {
+    position: absolute;
+    top: 503px;
+    left: 675px;
+
+    @include sp {
+        top: 605px;
+        left: 195px;
+    }
+
+}
+
+.icon_sevenEleven2 {
+
+    width: 70px;
+    position: absolute;
+    top: 510px;
+    left: 935px;
+
+    @include sp {
+        width: 45px;
+        height: 25px;
+        top: 605px;
+        left: 295px;
+    }
+}
+
+.icon_familyMart3 {
+
+    width: 70px;
+    position: absolute;
+    top: 629px;
+    left: 995px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 685px;
+        left: 315px;
+    }
+}
+
+.icon_park1 {
+
+    width: 70px;
+    position: absolute;
+    top: 700px;
+    left: 840px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 745px;
+        left: 235px;
+    }
+}
+
+.icon_park2 {
+
+    width: 70px;
+    position: absolute;
+    top: 740px;
+    left: 840px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 771px;
+        left: 235px;
+    }
+}

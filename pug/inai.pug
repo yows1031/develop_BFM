@@ -1,0 +1,127 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/inai.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/inai.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.button.is-info.is-outlined
+              p 運動公園
+            li.button.is-info.is-outlined
+              p ローソン
+            li.button.is-info.is-outlined
+              p ミニストップ
+            li.button.is-info.is-outlined
+              p アンジュガーデン
+            li.button.is-info.is-outlined
+              p ローソン
+            li.button.is-info.is-outlined
+              p 稲井総合支所
+            li.button.is-info.is-outlined
+              p 稲井公民館
+            li.button.is-info.is-outlined
+              p ファミリーマート
+            li.button.is-info.is-outlined
+              p ライフル射撃場
+        // 地図メニュー
+        .map
+          .button.is-info.icon_park
+            p 運動公園
+          .button.is-info.icon_lowSon1
+            p ローソン
+          .button.is-info.icon_miniStop
+            p.fontSmall
+               | ミニ
+               br
+               | ストップ
+          .button.is-info.icon_garden
+            p.fontSmall
+               | アンジュ
+               br
+               | ガーデン
+          .button.is-info.icon_lowSon2
+            p ローソン
+          .button.is-info.icon_sougou
+            p.fontSmall
+               | 稲井
+               br
+               | 総合支所
+          .button.is-info.icon_center
+            p.fontSmall
+               | 稲井
+               br
+               | 公民館
+          .button.is-info.icon_familiMart
+            p.fontSmall
+               | ファミリー
+               br
+               | マート
+          .button.is-info.icon_raiful
+            p.fontSmall
+               | ライフル
+               br
+               | 射撃場
+          
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')

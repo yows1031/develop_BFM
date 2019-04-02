@@ -1,0 +1,192 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/kanan.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/kanan.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          .menuArea
+            p 前谷地地区
+          ul
+            li.button.is-info.is-outlined
+              p 河南総合支所
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 河南老人
+                br
+                | 福祉センター
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 河南遊楽館
+                br
+                |（河南ホール）
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 河南遊楽館
+                br
+                |（図書室側）
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 河南遊楽館
+                br
+                |（展示コーナー）
+          .menuArea
+            p 鹿又地区
+          ul
+            li.button.is-info.is-outlined
+              p セブンイレブン
+            li.button.is-info.is-outlined
+              p ザ・ビック
+          .menuArea
+            p 広渕地区
+          ul
+            li.button.is-info.is-outlined
+              p ツルハドラッグ
+            li.button.is-info.is-outlined
+              p ファミリーマート
+          .menuArea
+            p 須江地区
+          ul
+            li.button.is-info.is-outlined
+              p セブンイレブン
+            li.button.is-info.is-outlined
+              p ファミリーマート
+            li.button.is-info.is-outlined
+              p 中央公園（野球場）
+            li.button.is-info.is-outlined
+              p 中央公園（外）
+        // 地図メニュー
+        .map
+          .icon_maeyachi.Area
+            p 前谷地地区
+          .button.is-info.icon_sougou
+            p.fontSmall
+              | 河南
+              br
+              | 総合支所
+          .button.is-info.icon_hukushi
+            p.fontSmall2 
+              | 河南老人
+              br
+              | 福祉センター
+          .button.is-info.icon_kananHall
+            p.fontSmall2
+              | 河南遊楽館
+              br
+              | （河南ホール）
+          .button.is-info.icon_library
+            p.fontSmall2
+              | 河南遊楽館
+              br
+              | （図書室側）
+          .button.is-info.icon_display
+            p.fontSmall2
+              | 河南遊楽館
+              br
+              | （展示コーナー）
+          .icon_kanomata.Area
+            p 鹿又地区
+          .button.is-info.icon_sevenEleven
+            p.fontSmall
+              | セブン
+              br
+              | イレブン
+          .button.is-info.icon_big
+            p ザ・ビッグ
+          .icon_hirobuchi.Area
+            p 広渕地区
+          .button.is-info.icon_tsuruha
+            p.fontSmall
+              | ツルハ
+              br
+              | ドラッグ
+          .button.is-info.icon_familyMart2
+            p.fontSmall 
+              | ファミリー
+              br
+              | マート
+          .icon_sue.Area
+            p 須江地区
+          .button.is-info.icon_sevenEleven2
+            p.fontSmall
+              | セブン
+              br
+              | イレブン
+          .button.is-info.icon_familyMart3
+            p.fontSmall 
+              | ファミリー
+              br
+              | マート
+          .button.is-info.icon_park1
+            p.fontSmall
+              | 中央公園
+              br
+              | (野球場)
+          .button.is-info.icon_park2
+            p.fontSmall
+              | 中央公園
+              br
+              | (外)
+                   
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')
