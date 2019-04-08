@@ -1,0 +1,26 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.map {
+    background-image: url("#{$imgDir}hebita_West.png");
+}
+
+.icon_donky {
+
+    width: 70px;
+    position: absolute;
+    top: 616px;
+    left: 1055px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 670px;
+        left: 320px;
+    }
+}

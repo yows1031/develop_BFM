@@ -1,0 +1,344 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.map {
+    background-image: url("#{$imgDir}hebita_East.png");
+}
+
+.icon_donky {
+
+    width: 70px;
+    position: absolute;
+    top: 616px;
+    left: 1055px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 670px;
+        left: 320px;
+    }
+}
+
+.icon_josyuya {
+
+    width: 70px;
+    position: absolute;
+    top: 715px;
+    left: 970px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 755px;
+        left: 315px;
+    }
+}
+
+.icon_yunome {
+
+    width: 70px;
+    position: absolute;
+    top: 765px;
+    left: 950px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 785px;
+        left: 305px;
+    }
+}
+
+.icon_trye {
+
+    width: 70px;
+    position: absolute;
+    top: 670px;
+    left: 750px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 720px;
+        left: 220px;
+    }
+}
+
+.icon_bookoff {
+
+    width: 70px;
+    position: absolute;
+    top: 720px;
+    left: 735px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 755px;
+        left: 220px;
+    }
+}
+
+.icon_yorkado {
+
+    width: 70px;
+    position: absolute;
+    top: 480px;
+    left: 475px; 
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 585px;
+        left: 110px;
+    }
+}
+
+.icon_nitori {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 480px;
+    left: 320px;
+
+    @include sp {
+        width: 40px;
+        height: 20px;
+        top: 585px;
+        left: 55px;
+    }
+}
+
+.icon_seikyo {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 520px;
+    left: 455px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 615px;
+        left: 105px;
+    }
+}
+
+.icon_uniqlo {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 514px;
+    left: 300px;
+
+    @include sp {
+        width: 40px;
+        height: 20px;
+        top: 607px;
+        left: 45px;
+    }
+}
+
+.icon_fuji {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 553px;
+    left: 440px;
+
+    @include sp {
+        width: 70px;
+        height: 25px;
+        top: 642px;
+        left: 105px;
+    }
+}
+
+.icon_softbank {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 585px;
+    left: 480px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 668px;
+        left: 120px;
+    }
+}
+
+.icon_ks {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 585px;
+    left: 395px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 650px;
+        left: 63px;
+    }
+}
+
+.icon_rutein {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 620px;
+    left: 375px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 676px;
+        left: 60px;
+    }
+}
+
+.icon_york {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 545px;
+    left: 270px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 628px;
+        left: 25px;
+    }
+}
+.icon_homac {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 577px;
+    left: 245px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 654px;
+        left: 8px;
+    }
+}
+.icon_tsuruha {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 620px;
+    left: 305px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 702px;
+        left: 46px;
+    }
+}
+
+.icon_xebio {
+
+    width: 75px;
+    height: 30px;
+    position: absolute;
+    top: 608px;
+    left: 235px;
+
+    @include sp {
+        width: 40px;
+        height: 20px;
+        top: 680px;
+        left: 5px;
+    }
+}
+
+.icon_yamada {
+
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 640px;
+    left: 230px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 701px;
+        left: 5px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.icon_yakuoudou {
+
+    width: 70px;
+    position: absolute;
+    top: 205px;
+    left: 855px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 400px;
+        left: 245px;
+    }
+}
+
+.icon_welsia {
+
+    width: 70px;
+    position: absolute;
+    top: 200px;
+    left: 660px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 385px;
+        left: 175px;
+    }
+}
+
+.icon_akebono {
+
+    width: 70px;
+    position: absolute;
+    top: 300px;
+    left: 540px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 475px;
+        left: 105px;
+    }
+}

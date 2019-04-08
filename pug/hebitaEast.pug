@@ -1,0 +1,211 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/hebitaEast.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/hebitaEast.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.button.is-info.is-outlined
+              p びっくりドンキー
+            li.button.is-info.is-outlined
+              p 上州屋
+            li.button.is-info.is-outlined
+              p ユノメ家具Z
+            li.button.is-info.is-outlined
+              p タイヤガーデン
+            li.button.is-info.is-outlined
+              p ブックオフ
+            li.button.is-info.is-outlined
+              p イトーヨーカドー
+            li.button.is-info.is-outlined
+              p ニトリ
+            li.button.is-info.is-outlined
+              p みやぎ生協
+            li.button.is-info.is-outlined
+              p ユニクロ
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | タイヤ＆ホイール館フジ
+            li.button.is-info.is-outlined
+              p ソフトバンク
+            li.button.is-info.is-outlined
+              p ケーズデンキ
+            li.button.is-info.is-outlined
+              p ホテルルートイン
+            li.button.is-info.is-outlined
+              p ヨークベニマル
+            li.button.is-info.is-outlined
+              p ホーマック
+            li.button.is-info.is-outlined
+              p ツルハドラッグ
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | スーパスポーツ
+                br
+                | ゼビオ
+            li.button.is-info.is-outlined
+              p ヤマダ電機
+            li.button.is-info.is-outlined
+              p 薬王堂
+            li.button.is-info.is-outlined
+              p ウエルシア
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | あけぼの北
+                br
+                | 中央公園
+        // 地図メニュー
+        .map
+          .button.is-info.icon_donky
+            p.fontSmall
+              | びっくり
+              br
+              | ドンキー
+          .button.is-info.icon_josyuya
+            p 上州屋
+          .button.is-info.icon_yunome
+            p.fontSmall
+               | ユノメ
+               br
+               | 家具Z
+          .button.is-info.icon_trye
+            p.fontSmall
+               | タイヤ
+               br
+               | ガーデン
+          .button.is-info.icon_bookoff
+            p.fontSmall
+               | ブック
+               br
+               | オフ
+          .button.is-info.icon_yorkado
+            p.fontSmall
+               | イトー
+               br
+               | ヨーカドー
+          .button.is-info.icon_nitori
+            p ニトリ
+          .button.is-info.icon_seikyo
+            p.fontSmall
+               | みやぎ
+               br
+               | 生協
+          .button.is-info.icon_uniqlo
+            p ユニクロ
+          .button.is-info.icon_fuji
+            p.fontSmall2
+              | タイヤ＆
+              br
+              | ホイール館フジ
+          .button.is-info.icon_softbank
+            p.fontSmall
+              | ソフト
+              br
+              | バンク
+          .button.is-info.icon_ks
+            p.fontSmall
+               | ケーズ
+               br
+               | デンキ
+          .button.is-info.icon_rutein
+            p.fontSmall
+              | ホテル
+              br
+              | ルートイン
+          .button.is-info.icon_york
+            p.fontSmall
+               | ヨーク
+               br
+               | ベニマル
+          .button.is-info.icon_homac
+            p.fontSmall
+               | ホー
+               br
+               | マック
+          .button.is-info.icon_tsuruha
+            p.fontSmall
+              | ツルハ
+              br
+              | ドラッグ
+          .button.is-info.icon_xebio
+            p.fontSmall
+               | ゼビオ
+          .button.is-info.icon_yamada
+            p.fontSmall
+               | ヤマダ
+               br.spMode
+               | 電機
+          .button.is-info.icon_yakuoudou
+            p 薬王堂
+          .button.is-info.icon_welsia
+            p.fontSmall
+               | ウエルシア
+          .button.is-info.icon_akebono
+            p.fontSmall
+               | あけぼの北
+               br
+               | 中央公園
+          
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')
