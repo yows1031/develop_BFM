@@ -10,17 +10,246 @@ $imgDir: "../img/";
     background-image: url("#{$imgDir}hebita_West.png");
 }
 
-.icon_donky {
+.icon_sevenEleven {
 
     width: 70px;
     position: absolute;
-    top: 616px;
-    left: 1055px;
+    top: 225px;
+    left: 680px;
 
     @include sp {
         width: 40px;
         height: 25px;
-        top: 670px;
-        left: 320px;
+        top: 415px;
+        left: 180px;
+    }
+}
+
+.icon_gattu {
+
+    width: 80px;
+    position: absolute;
+    top: 205px;
+    left: 770px;
+
+    @include sp {
+        width: 60px;
+        height: 25px;
+        top: 390px;
+        left: 220px;
+    }
+}
+
+.icon_aeon1 {
+
+    width: 70px;
+    position: absolute;
+    top: 400px;
+    left: 830px;
+
+    @include sp {
+        width: 40px;
+        height: 30px;
+        top: 550px;
+        left: 230px;
+    }
+}
+
+.icon_aeon2 {
+
+    width: 70px;
+    position: absolute;
+    top: 450px;
+    left: 830px;
+
+    @include sp {
+        width: 40px;
+        height: 30px;
+        top: 585px;
+        left: 230px;
+    }
+}
+
+.icon_gift {
+
+    width: 50px;
+    position: absolute;
+    top: 385px;
+    left: 670px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 515px;
+        left: 190px;
+    }
+}
+
+.icon_komeda {
+
+    width: 50px;
+    position: absolute;
+    top: 385px;
+    left: 549px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 498px;
+        left: 140px;
+    }
+}
+
+.icon_miniStop {
+
+    width: 50px;
+    position: absolute;
+    top: 395px;
+    left: 600px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 525px;
+        left: 150px;
+    }
+}
+
+.icon_hama {
+
+    width: 70px;
+    position: absolute;
+    top: 460px;
+    left: 580px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 560px;
+        left: 150px;
+    }
+} 
+
+.icon_ainoya {
+
+    width: 70px;
+    height: 27px;
+    position: absolute;
+    top: 525px;
+    left: 590px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 610px;
+        left: 150px;
+    }
+}
+
+.icon_central {
+
+    width: 70px;
+    position: absolute;
+    top: 451px;
+    left: 305px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 550px;
+        left: 60px;
+    }
+}
+
+.icon_tsuruha {
+
+    width: 70px;
+    height: 27px;
+    position: absolute;
+    top: 557px;
+    left: 586px;
+
+    @include sp {
+        width: 75px;
+        height: 23px;
+        top: 638px;
+        left: 115px;
+    }
+}
+
+.icon_yamanakaya {
+
+    width: 60px;
+    height: 27px;
+    position: absolute;
+    top: 586px;
+    left: 597px;
+
+    @include sp {
+        width: 50px;
+        height: 23px;
+        top: 662px;
+        left: 140px;
+    }
+}
+
+.icon_familiyMart {
+
+    width: 80px;
+    height: 27px;
+    position: absolute;
+    top: 615px;
+    left: 585px;
+
+    @include sp {
+        width: 80px;
+        height: 20px;
+        top: 686px;
+        left: 110px;
+    }
+}
+
+.icon_megumino {
+
+    width: 70px;
+    position: absolute;
+    top: 665px;
+    left: 810px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 715px;
+        left: 245px;
+    }
+}
+
+.icon_south {
+
+    width: 70px;
+    position: absolute;
+    top: 700px;
+    left: 545px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 740px;
+        left: 135px;
+    }
+}
+
+.icon_west {
+
+    width: 70px;
+    position: absolute;
+    top: 630px;
+    left: 200px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 695px;
+        left: 10px;
     }
 }

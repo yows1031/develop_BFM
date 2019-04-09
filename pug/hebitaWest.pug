@@ -1,0 +1,178 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/hebitaWest.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/hebitaWest.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.button.is-info.is-outlined
+              p セブンイレブン
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 仙壷ホルモンガッツ
+            li.button.is-info.is-outlined
+              p イオンモール(１階)
+            li.button.is-info.is-outlined
+              p イオンモール(２階)
+            li.button.is-info.is-outlined
+              p ギフトプラザ
+            li.button.is-info.is-outlined
+              p コメダ珈琲
+            li.button.is-info.is-outlined
+              p ミニストップ
+            li.button.is-info.is-outlined
+              p はま寿司
+            li.button.is-info.is-outlined
+              p あいのや
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | のぞみ野中央公園
+            li.button.is-info.is-outlined
+              p ツルハドラッグ
+            li.button.is-info.is-outlined
+              p やまなか家
+            li.button.is-info.is-outlined
+              p ファミリーマート
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 恵み野自然公園
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | のぞみ野南公園
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | のぞみ野西公園
+        // 地図メニュー
+        .map
+          .button.is-info.icon_sevenEleven
+            p.fontSmall
+              | セブン
+              br
+              | イレブン
+          .button.is-info.icon_gattu
+            p.fontSmall
+              | 仙壷ホルモン
+              br
+              | ガッツ
+          .button.is-info.icon_aeon1
+            p.fontSmall
+              | イオン
+              br
+              | (１階)
+          .button.is-info.icon_aeon2
+            p.fontSmall
+              | イオン
+              br
+              | (２階)
+          .button.is-info.icon_gift
+            p.fontSmall
+               | ギフト
+               br
+               | プラザ
+          .button.is-info.icon_komeda
+            p.fontSmall2
+               | コメダ
+               br
+               | 珈琲
+          .button.is-info.icon_miniStop
+            p.fontSmall2
+               | ミニ
+               br
+               | ストップ
+          .button.is-info.icon_hama
+            p はま寿司
+          .button.is-info.icon_ainoya
+            p あいのや
+          .button.is-info.icon_central
+            p.fontSmall
+               | のぞみ野
+               br
+               | 中央公園
+          .button.is-info.icon_tsuruha
+            p.fontSmall2
+               | ツルハドラッグ
+          .button.is-info.icon_yamanakaya
+            p.fontSmall2
+               | やまなか家
+          .button.is-info.icon_familiyMart
+            p.fontSmall2
+               | ファミリーマート
+          .button.is-info.icon_megumino
+            p.fontSmall
+               | 恵み野
+               br
+               | 自然公園
+          .button.is-info.icon_south
+            p.fontSmall
+               | のぞみ野
+               br
+               | 南公園
+          .button.is-info.icon_west
+            p.fontSmall
+               | のぞみ野
+               br
+               | 西公園
+          
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')
