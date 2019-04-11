@@ -1,0 +1,213 @@
+doctype html
+html
+  // このファイルはpug形式で書いています。(develop_BFM/pug/hebitaSouth.pug)
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/hebitaSouth.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.button.is-info.is-outlined
+              p 洋服の青山
+            li.button.is-info.is-outlined
+              p スシロー
+            li.button.is-info.is-outlined
+              p セリア
+            li.button.is-info.is-outlined
+              p.fontSmaall
+                | 恵み野東公園
+            li.button.is-info.is-outlined
+              p 紳士服のコナカ
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | 恵み野中央公園
+            li.button.is-info.is-outlined
+              p ドコモショップ
+            li.button.is-info.is-outlined
+              p auショップ
+            li.button.is-info.is-outlined
+              p カワチ薬品
+            li.button.is-info.is-outlined
+              p しまむら
+            li.button.is-info.is-outlined
+              p サトー商会
+            li.button.is-info.is-outlined
+              p ツルハドラッグ
+            li.button.is-info.is-outlined
+              p 恵み野西公園
+            li.button.is-info.is-outlined
+              p 法務局
+            li.button.is-info.is-outlined
+              p ファミリーマート
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | あゆみ野近隣公園
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | あゆみ野東公園
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | あゆみ野通り公園
+            li.button.is-info.is-outlined
+              p.fontSmall
+                | あゆみ野近隣公園
+            li.button.is-info.is-outlined
+              p あゆみ野駅前
+            li.button.is-info.is-outlined
+              p ビバホーム
+            li.button.is-info.is-outlined
+              p 石巻合同庁舎
+        // 地図メニュー
+        .map
+          .button.is-info.icon_aoyama
+            p.fontSmall
+              | 洋服の
+              br
+              | 青山
+          .button.is-info.icon_sushiro
+            p スシロー
+          .button.is-info.icon_seria
+            p セリア
+          .button.is-info.icon_megumiEast
+            p.fontSmall
+              | 恵み野
+              br
+              | 東公園
+          .button.is-info.icon_konaka
+            p.fontSmall
+              | 紳士服の
+              br
+              | コナカ
+          .button.is-info.icon_megumiCentral
+            p.fontSmall
+              | 恵み野
+              br
+              | 中央公園
+          .button.is-info.icon_docomo
+            p.fontSmall
+              | ドコモ
+              br
+              | ショップ
+          .button.is-info.icon_au
+            p.fontSmall
+              | au
+              br
+              | ショップ
+          .button.is-info.icon_kawachi
+            p.fontSmall
+              | カワチ
+              br.spMode
+              | 薬品
+          .button.is-info.icon_shimamura
+            p しまむら
+          .button.is-info.icon_sato
+            p.fontSmall
+              | サトー
+              br.spMode
+              | 商会
+          .button.is-info.icon_tsuruha
+            p.fontSmall
+              | ツルハ
+              br
+              | ドラッグ       
+          .button.is-info.icon_megumiWest
+            p.fontSmall
+              | 恵み野
+              br
+              | 西公園
+          .button.is-info.icon_houmu
+            p 法務局
+          .button.is-info.icon_familyMart
+            p.fontSmall2
+              | ファミリー
+              br
+              | マート
+          .button.is-info.icon_ayuminoKinrin
+            p.fontSmall
+              | あゆみ野
+              br
+              | 近隣公園
+          .button.is-info.icon_ayuminoEast
+            p.fontSmall
+              | あゆみ野
+              br
+              | 東公園
+          .button.is-info.icon_ayuminoStreet
+            p.fontSmall
+              | あゆみ野
+              br
+              | 通り公園
+          .button.is-info.icon_station
+            p.fontSmall
+              | あゆみ野
+              br
+              | 駅前
+          .button.is-info.icon_viva
+            p.fontSmall
+              | ビバホーム
+          .button.is-info.icon_public
+            p.fontSmall
+               | 石巻
+               br
+               | 合同庁舎
+          
+    //-   // マスク
+    //-   #mask.hidden
+    //-   // 市役所
+    //-   table#cityHall.hidden
+    //-     tbody
+    //-       tr.pointTittle
+    //-         th(colspan='9')
+    //-           p 石巻市役所
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/parking.png', width='30', height='30')
+    //-         td.text 専用駐車場
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/babybed_ng.png', width='30', height='30')
+    //-         td.text ベビーベッド
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
+    //-         td.text マルチシート
+    //-         td.sign なし
+    //-       tr.infomation
+    //-         td.icon
+    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
+    //-         td.text オストメイト
+    //-         td.sign なし
+    //-         td.icon
+    //-           img(src='icon/button.png', width='30', height='30')
+    //-         td.text 呼び出しボタン
+    //-         td.sign あり
+    //-         td.icon
+    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
+    //-         td.text シャワートイレ
+    //-         td.sing なし
+    //-       tr.slide
+    //-         td.pic(colspan='9')
+    //-           i#cityHallprev.fas.fa-chevron-circle-left
+    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+    //-           i#cityHallnext.fas.fa-chevron-circle-right
+    //-       tr.pointData
+    //-         td(colspan='9')
+    //-           .under
+    //-             nav
+    //-               ul#cityhall_thumbnails.subnav
+    //-             #cityHallBack
+    //-               i.fas.fa-caret-square-up
+    //-               i.fas.fa-caret-square-left
+    include include/footer.pug
+    
+    script(src='js/station.js')

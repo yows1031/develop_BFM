@@ -134,6 +134,11 @@ main {
                     font-size: 2pt;
                 }
             }
+
+            .button.is-info {
+                border: solid 1px red;
+                border-radius: 3px;
+            }
            
         }
     }

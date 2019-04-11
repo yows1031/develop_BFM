@@ -10,17 +10,334 @@ $imgDir: "../img/";
     background-image: url("#{$imgDir}hebita_South.png");
 }
 
-.icon_sevenEleven {
+
+.icon_aoyama {
 
     width: 70px;
     position: absolute;
-    top: 225px;
-    left: 680px;
+    top: 230px;
+    left: 845px;
 
     @include sp {
         width: 40px;
         height: 25px;
-        top: 415px;
-        left: 180px;
+        top: 405px;
+        left: 262px;
+    }
+}
+
+.icon_sushiro {
+
+    width: 70px;
+    position: absolute;
+    top: 280px;
+    left: 840px;
+
+    @include sp {
+        width: 40px;
+        height: 23px;
+        top: 436px;
+        left: 258px;
+    }
+}
+
+.icon_seria {
+
+    width: 55px;
+    position: absolute;
+    top: 318px;
+    left: 830px;
+
+    @include sp {
+        width: 40px;
+        height: 23px;
+        top: 462px;
+        left: 250px;
+    }
+}
+
+.icon_megumiEast {
+
+    width: 55px;
+    position: absolute;
+    top: 325px;
+    left: 900px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 464px;
+        left: 290px;
+    }
+}
+
+.icon_konaka {
+
+    width: 70px;
+    position: absolute;
+    top: 395px;
+    left: 830px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 515px;
+        left: 256px;
+    }
+}
+
+.icon_megumiCentral {
+
+    width: 70px;
+    position: absolute;
+    top: 320px;
+    left: 710px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 475px;
+        left: 195px;
+    }
+}
+
+.icon_docomo {
+
+    width: 70px;
+    position: absolute;
+    top: 355px;
+    left: 830px;
+
+    @include sp {
+        width: 38px;
+        height: 23px;
+        top: 490px;
+        left: 255px;
+    }
+}
+
+.icon_au {
+
+    width: 55px;
+    position: absolute;
+    top: 432px;
+    left: 835px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 546px;
+        left: 260px;
+    }
+}
+
+.icon_kawachi {
+
+    width: 70px;
+    position: absolute;
+    top: 385px;
+    left: 750px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 520px;
+        left: 218px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.icon_shimamura {
+
+    width: 70px;
+    position: absolute;
+    top: 430px;
+    left: 725px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 550px;
+        left: 210px;
+    }
+}
+
+.icon_sato {
+
+    width: 70px;
+    position: absolute;
+    top: 385px;
+    left: 650px;
+
+    @include sp {
+        width: 35px;
+        height: 25px;
+        top: 520px;
+        left: 182px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.icon_tsuruha {
+
+    width: 70px;
+    position: absolute;
+    top: 450px;
+    left: 395px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 560px;
+        left: 85px;
+    }
+}
+
+.icon_megumiWest {
+
+    width: 70px;
+    position: absolute;
+    top: 345px;
+    left: 530px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 490px;
+        left: 125px;
+    }
+}
+
+.icon_houmu {
+
+    width: 70px;
+    position: absolute;
+    top: 435px;
+    left: 555px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 553px;
+        left: 147px;
+    }
+}
+
+.icon_familyMart {
+
+    width: 70px;
+    position: absolute;
+    top: 390px;
+    left: 565px;
+
+    @include sp {
+        width: 50px;
+        height: 23px;
+        top: 525px;
+        left: 130px;
+    }
+}
+
+.icon_ayuminoKinrin {
+
+    width: 70px;
+    position: absolute;
+    top: 350px;
+    left: 340px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 490px;
+        left: 60px;
+    }
+}
+
+.icon_ayuminoEast {
+
+    width: 70px;
+    position: absolute;
+    top: 515px;
+    left: 440px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 610px;
+        left: 75px;
+    }
+}
+
+.icon_ayuminoStreet {
+
+    width: 70px;
+    position: absolute;
+    top: 495px;
+    left: 245px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 595px;
+        left: 15px;
+    }
+}
+
+.icon_station {
+
+    width: 70px;
+    position: absolute;
+    top: 640px;
+    left: 250px;
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 700px;
+        left: 15px;
+    }
+}
+
+.icon_viva {
+
+    width: 70px;
+    position: absolute;
+    top: 705px;
+    left: 1010px;
+
+    @include sp {
+        width: 50px;
+        height: 25px;
+        top: 750px;
+        left: 295px;
+    }
+}
+
+.icon_public {
+
+    width: 70px;
+    position: absolute;
+    top: 415px;
+    left: 250px;
+
+    @include sp {
+        width: 45px;
+        height: 25px;
+        top: 540px;
+        left: 10px;
     }
 }
