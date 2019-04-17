@@ -17,7 +17,7 @@ $imgDir: "../img/";
     left: 480px;
 
     @include sp {
-        width: 60px;
+        width: 50px;
         top: 410px;
         left: 110px;
     }
@@ -29,9 +29,17 @@ $imgDir: "../img/";
     left: 445px;
 
     @include sp {
-        width: 60px;
+        width: 50px;
         top: 465px;
         left: 80px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
     }
 }
 .icon_sevenEleven {
@@ -41,7 +49,7 @@ $imgDir: "../img/";
     left: 695px;
 
     @include sp {
-        width: 60px;
+        width: 50px;
         top: 430px;
         left: 170px;
     }
@@ -77,9 +85,17 @@ $imgDir: "../img/";
     left: 830px;
 
     @include sp {
-        width: 60px;
-        top: 505px;
-        left: 230px;
+        width: 50px;
+        top: 520px;
+        left: 238px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
     }
 }
 .icon_raitu {
@@ -101,9 +117,17 @@ $imgDir: "../img/";
     left: 930px;
 
     @include sp {
-        width: 70px;
+        width: 50px;
         top: 530px;
         left: 290px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
     }
 }
 .icon_hukkou {
@@ -125,9 +149,9 @@ $imgDir: "../img/";
     left: 835px;
 
     @include sp {
-        width: 60px;
-        top: 640px;
-        left: 220px;
+        width: 55px;
+        top: 643px;
+        left: 233px;
     }
 }
 .icon_market {
@@ -138,7 +162,7 @@ $imgDir: "../img/";
     
     @include sp {
         width: 70px;
-        top: 628px;
+        top: 642px;
         left: 290px;
     }
 }
@@ -149,9 +173,17 @@ $imgDir: "../img/";
     left: 1050px;
 
     @include sp {
-        width: 60px;
-        top: 660px;
-        left: 300px;
+        width: 50px;
+        top: 680px;
+        left: 305px;
+    }
+
+    .spMode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
     }
 }
 .icon_nakasePark {
@@ -161,8 +193,8 @@ $imgDir: "../img/";
     left: 1050px;
 
     @include sp {
-        width: 60px;
-        top: 700px;
+        width: 50px;
+        top: 730px;
         left: 310px;
     }
 }

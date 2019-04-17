@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/main2.css')
+  body.container
+    include include/header.pug
+    main.index
+      .pickMain
+      .button.is-danger.is-outlined.ekimae
+        a(href='station.html')
+          p
+          | 石巻
+          br
+          | 駅前
+      .button.is-danger.is-outlined.sumiyoshi
+        a(href='sumiyoshi.html')
+          p
+          | 住吉
+          br
+          | 山下
+      .button.is-danger.is-outlined.hebitaEast
+        a(href='hebitaEast.html')
+          p
+          | 蛇田
+          br
+          | 東
+      .button.is-danger.is-outlined.hebitaWest
+        a(href='hebitaWest.html')
+          p
+          | 蛇田
+          br
+          | 西
+      .button.is-danger.is-outlined.hebitaSouth
+        a(href='hebitaSouth.html')
+          p
+          | 蛇田
+          br
+          | 南
+      .button.is-danger.is-outlined.kama
+        a(href='kama.html')
+          p
+          | 釜
+          br
+          | 大街道
+      .button.is-danger.is-outlined.minato
+        a(href='minato.html')
+          p 湊
+      .button.is-danger.is-outlined.watanoha
+        a(href='watanoha.html')
+         p 渡波
+      .button.is-danger.is-outlined.inai
+        a(href='inai.html')
+          p 稲井
+      .button.is-danger.is-outlined.hagihama
+        a(href='ogatsu_hagihama.html')
+          p 萩浜
+      .button.is-danger.is-outlined.oshika
+        a(href='oshika.html')
+          p 牡鹿
+      .button.is-danger.is-outlined.ogatsu
+        a(href='ogatsu_hagihama.html')
+          p 雄勝
+      .button.is-danger.is-outlined.kitakami
+        a(href='kitakami.html')
+          p 北上
+      .button.is-danger.is-outlined.kahoku
+        a(href='kahoku.html')
+          p 河北
+      .button.is-danger.is-outlined.kanan
+        a(href='kanan.html')
+          p 河南
+      .button.is-danger.is-outlined.monou
+        a(href='monou.html')
+          p 桃生
+    include include/footer.pug
+    

@@ -124,14 +124,14 @@ main {
             .fontSmall {
 
                 @include sp {
-                    font-size: 3pt;
+                    font-size: 8pt;
                 }
             }
 
             .fontSmall2 {
 
                 @include sp {
-                    font-size: 2pt;
+                    font-size: 6pt;
                 }
             }
 
