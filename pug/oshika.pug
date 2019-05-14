@@ -24,12 +24,19 @@ html
             li.button.is-info.is-outlined
               p おしか清心苑
             li.button.is-info.is-outlined
-              p 清優館
+              p 清優館①
+            li.button.is-info.is-outlined
+              p 清優館②
             li.button.is-info.is-outlined
               p.fontSmall
                | 牡鹿交流センター
                br
-               | ほっとまる
+               | ほっとまる①
+            li.button.is-info.is-outlined
+              p.fontSmall
+               | 牡鹿交流センター
+               br
+               | ほっとまる②
             li.button.is-info.is-outlined
               p 寄磯診療所
         // 地図メニュー
@@ -46,15 +53,24 @@ html
               | おしか
               br.spmode
               | 清心苑
-          .button.is-info.icon_seiyu
-            p 清優館
-          .button.is-info.icon_hot_Maru
+          .button.is-info.icon_seiyu1
+            p 清優館①
+          .button.is-info.icon_seiyu2
+            p 清優館②
+          .button.is-info.icon_hot_Maru1
             p.fontSmall2
               | 牡鹿交流
               br.spmode
               | センター
               br
-              | ほっとまる
+              | ほっとまる①
+          .button.is-info.icon_hot_Maru2
+            p.fontSmall2
+              | 牡鹿交流
+              br.spmode
+              | センター
+              br
+              | ほっとまる②
           .button.is-info.icon_yoriiso
             p 
               | 寄磯
@@ -62,53 +78,53 @@ html
               | 診療所
           
           
-    //-   // マスク
-    //-   #mask.hidden
-    //-   // 市役所
-    //-   table#cityHall.hidden
-    //-     tbody
-    //-       tr.pointTittle
-    //-         th(colspan='9')
-    //-           p 石巻市役所
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/parking.png', width='30', height='30')
-    //-         td.text 専用駐車場
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/babybed_ng.png', width='30', height='30')
-    //-         td.text ベビーベッド
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
-    //-         td.text マルチシート
-    //-         td.sign なし
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
-    //-         td.text オストメイト
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/button.png', width='30', height='30')
-    //-         td.text 呼び出しボタン
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
-    //-         td.text シャワートイレ
-    //-         td.sing なし
-    //-       tr.slide
-    //-         td.pic(colspan='9')
-    //-           i#cityHallprev.fas.fa-chevron-circle-left
-    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-    //-           i#cityHallnext.fas.fa-chevron-circle-right
-    //-       tr.pointData
-    //-         td(colspan='9')
-    //-           .under
-    //-             nav
-    //-               ul#cityhall_thumbnails.subnav
-    //-             #cityHallBack
-    //-               i.fas.fa-caret-square-up
-    //-               i.fas.fa-caret-square-left
+      // マスク
+      #mask.hidden
+      // 市役所
+      table#cityHall
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p 東洋館
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.slide
+            td.pic(colspan='9')
+              i#cityHallprev.fas.fa-chevron-circle-left
+              img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
+              i#cityHallnext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#cityhall_thumbnails.subnav
+                #cityHallBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
     include include/footer.pug
     
     script(src='js/station.js')

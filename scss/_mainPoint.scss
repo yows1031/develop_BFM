@@ -21,9 +21,9 @@ a {
     left: 70px;
 
     @include sp {
-        height: 170px;
+        height: 200px;
         width: 365px;
-        top: 645px;
+        top: 612px;
         left: 0px;
     }
 }
@@ -36,8 +36,8 @@ a {
     left: 185px;
 
     @include sp {
-        top: 705px;
-        left: 85px;
+        top: 675px;
+        left: 90px;
     }
 }
 .sumiyoshi {
@@ -48,8 +48,8 @@ a {
     left: 170px;
 
     @include sp {
-        top: 665px;
-        left: 80px;
+        top: 625px;
+        left: 100px;
     }
 }
 .hebitaEast {
@@ -61,8 +61,8 @@ a {
 
     @include sp {
         width: 35px;
-        top: 662px;
-        left: 42px;
+        top: 635px;
+        left: 55px;
     }
 }
 .hebitaWest {
@@ -74,8 +74,8 @@ a {
 
     @include sp {
         width: 35px;
-        top: 662px;
-        left: 5px;
+        top: 635px;
+        left: 17px;
     }
 }
 .hebitaSouth {
@@ -87,8 +87,8 @@ a {
 
     @include sp {
         width: 35px;
-        top: 698px;
-        left: 20px;
+        top: 675px;
+        left: 35px;
     }
 }
 .kama {
@@ -99,8 +99,8 @@ a {
     left: 120px;
 
     @include sp {
-        top: 734px;
-        left: 23px;
+        top: 715px;
+        left: 50px;
     }
 }
 .inai {

@@ -50,12 +50,36 @@ $imgDir: "../img/";
         width: 40px;
         height: 25px;
         top: 600px;
-        left: 30px;
+        left: 52px;
     }
 
 }
 
-.icon_seiyu {
+.icon_seiyu1 {
+    width: 70px;
+    position: absolute;
+    top: 513px;
+    left: 230px;
+    
+
+    @include sp {
+        width: 40px;
+        height: 25px;
+        top: 609px;
+        left: 10px;
+    }
+
+    .spmode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+
+}
+
+.icon_seiyu2 {
     width: 70px;
     position: absolute;
     top: 550px;
@@ -79,16 +103,39 @@ $imgDir: "../img/";
 
 }
 
-.icon_hot_Maru {
+.icon_hot_Maru1 {
     width: 80px;
     position: absolute;
     top: 590px;
     left: 180px;
 
     @include sp {
-        width: 50px;
+        width: 60px;
         height: 50px;
         top: 665px;
+        left: 5px;
+    }
+
+    .spmode {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+
+}
+
+.icon_hot_Maru2 {
+    width: 80px;
+    position: absolute;
+    top: 627px;
+    left: 180px;
+
+    @include sp {
+        width: 60px;
+        height: 50px;
+        top: 715px;
         left: 5px;
     }
 
