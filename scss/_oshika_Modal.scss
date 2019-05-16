@@ -6,7 +6,7 @@ $imgDir: "../img/";
   }
 }
 
-#cityHall {
+#toyo {
     background: white;
     position: absolute;
     top: 210px;
@@ -18,39 +18,48 @@ $imgDir: "../img/";
         top: 390px;
         left: 5px;
     }
+
+    .hidden {
+        transform: translate(0, -800px);
+    
+        @include sp {
+            transform: translate(-500px, 0);
+        }
+    }
     
 
-    #cityHallprev, #cityHallnext {
+    #toyoPrev, #toyoNext {
         position: absolute;  
         font-size: 60px;
         opacity: 0.6;
         top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
 
         @include sp {
             font-size: 40px;
             top: 60px;
         }
     }
-    #cityHallprev {
+    #toyoPrev {
         left: 60px;
 
         @include  sp {
             left: 10px;
         }
     }
-    #cityHallnext {
+    #toyoNext {
         right: 60px;
 
         @include sp {
             left: 295px;
         }
     }
-      
-    #cityHallprev:hover, #cityHallnext:hover {
-        opacity: 1;
-    }
 
-    #cityHall_target {
+
+    #toyo_target {
         width: 350px;
         height: 250px;
         position: absolute;
@@ -65,7 +74,7 @@ $imgDir: "../img/";
         }
     }
 
-    #cityHallBack {
+    #toyoBack {
         margin-left: 20px;
         font-size: 60px;
         cursor: pointer;
@@ -99,7 +108,7 @@ $imgDir: "../img/";
     }
 }
 
-#cityHall.hidden {
+#toyo.hidden {
     transform: translate(0, -800px);
 
     @include sp {

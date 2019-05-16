@@ -168,10 +168,18 @@ main {
     // テーブル基本
 
     .pointTittle {
-        height: 80px;
+        height: 40px;
 
         P {
             font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .time {
+        
+        p {
+            font-size: 14pt;
             text-align: center;
         }
     }
@@ -241,8 +249,8 @@ main {
             justify-content: space-between;
 
                 li {
-                    width: 80px;
-                    height: 80px;
+                    width: 100px;
+                    height: 100px;
                     cursor: pointer;
                     opacity: 0.6;
 

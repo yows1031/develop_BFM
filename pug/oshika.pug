@@ -17,61 +17,61 @@ html
         // サイドメニュー
         #menu.hidden
           ul
-            li.button.is-info.is-outlined
+            li.btn_Toyo.button.is-info.is-outlined
               p 東洋館
-            li.button.is-info.is-outlined
+            li.btn_sogo.button.is-info.is-outlined
               p 牡鹿総合支所
-            li.button.is-info.is-outlined
+            li.btn_seishin.button.is-info.is-outlined
               p おしか清心苑
-            li.button.is-info.is-outlined
+            li.btn_seiyu1.button.is-info.is-outlined
               p 清優館①
-            li.button.is-info.is-outlined
+            li.btn_seiyu2.button.is-info.is-outlined
               p 清優館②
-            li.button.is-info.is-outlined
+            li.btn_maru1.button.is-info.is-outlined
               p.fontSmall
                | 牡鹿交流センター
                br
                | ほっとまる①
-            li.button.is-info.is-outlined
+            li.btn_maru2.button.is-info.is-outlined
               p.fontSmall
                | 牡鹿交流センター
                br
                | ほっとまる②
-            li.button.is-info.is-outlined
+            li.btn_yoriiso.button.is-info.is-outlined
               p 寄磯診療所
         // 地図メニュー
         .map
-          .button.is-info.icon_toyo
+          .btn_Toyo.button.is-info.icon_toyo
             p 東洋館
-          .button.is-info.icon_sougou
+          .btn_sogo.button.is-info.icon_sougou
             p.fontSmall
               | 牡鹿
               br
               | 総合支所
-          .button.is-info.icon_seishin
+          .btn_seishin.button.is-info.icon_seishin
             p.fontSmall 
               | おしか
               br.spmode
               | 清心苑
-          .button.is-info.icon_seiyu1
+          .btn_seiyu1.button.is-info.icon_seiyu1
             p 清優館①
-          .button.is-info.icon_seiyu2
+          .btn_seiyu2.button.is-info.icon_seiyu2
             p 清優館②
-          .button.is-info.icon_hot_Maru1
+          .btn_mnaru1.button.is-info.icon_hot_Maru1
             p.fontSmall2
               | 牡鹿交流
               br.spmode
               | センター
               br
               | ほっとまる①
-          .button.is-info.icon_hot_Maru2
+          .btn_maru2.button.is-info.icon_hot_Maru2
             p.fontSmall2
               | 牡鹿交流
               br.spmode
               | センター
               br
               | ほっとまる②
-          .button.is-info.icon_yoriiso
+          .btn_yoriiso.button.is-info.icon_yoriiso
             p 
               | 寄磯
               br.spmode
@@ -80,8 +80,8 @@ html
           
       // マスク
       #mask.hidden
-      // 市役所
-      table#cityHall
+      // 東洋館
+      table#toyo.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
@@ -112,19 +112,23 @@ html
               img(src='icon/showertoilet_ng.png', width='30', height='30')
             td.text シャワートイレ
             td.sing なし
+          tr.time
+            th(colspan='9')
+              p 時間：９：００〜１６：３０　電話：45-2206
           tr.slide
             td.pic(colspan='9')
-              i#cityHallprev.fas.fa-chevron-circle-left
-              img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-              i#cityHallnext.fas.fa-chevron-circle-right
+              i#toyoPrev.fas.fa-chevron-circle-left
+              img#toyo_target
+              i#toyoNext.fas.fa-chevron-circle-right
           tr.pointData
             td(colspan='9')
               .under
                 nav
-                  ul#cityhall_thumbnails.subnav
-                #cityHallBack
+                  ul#toyo_thumbnails.subnav
+                #toyoBack
                   i.fas.fa-caret-square-up
                   i.fas.fa-caret-square-left
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/oshika.js')
+    script(src='js/oshikaToyo.js')
