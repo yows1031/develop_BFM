@@ -19,15 +19,6 @@ $imgDir: "../img/";
         left: 5px;
     }
 
-    .hidden {
-        transform: translate(0, -800px);
-    
-        @include sp {
-            transform: translate(-500px, 0);
-        }
-    }
-    
-
     #toyoPrev, #toyoNext {
         position: absolute;  
         font-size: 60px;
@@ -103,12 +94,820 @@ $imgDir: "../img/";
             }
         }
     }
-    #cityHallBack:hover {
+    #toyoBack:hover {
         opacity: 1;
     }
 }
 
 #toyo.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#sogo {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #sogoPrev, #sogoNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sogoPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #sogoNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #sogo_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sogoBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #sogoBack:hover {
+        opacity: 1;
+    }
+}
+
+#sogo.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#seishin {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #seishinPrev, #seishinNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #seishinPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #seishinNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #seishin_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #seishinBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #seishinBack:hover {
+        opacity: 1;
+    }
+}
+
+#seishin.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#seiyu_1 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #seiyu_1Prev, #seiyu_1Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #seiyu_1Prev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #seiyu_1Next {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #seiyu_1_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #seiyu_1Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #seiyu_1Back:hover {
+        opacity: 1;
+    }
+}
+
+#seiyu_1.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#seiyu_2 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #seiyu_2Prev, #seiyu_2Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #seiyu_2Prev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #seiyu_2Next {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #seiyu_2_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #seiyu_2Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #seiyu_2Back:hover {
+        opacity: 1;
+    }
+}
+
+#seiyu_2.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#maru_1 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #maru_1Prev, #maru_1Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #maru_1Prev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #maru_1Next {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #maru_1_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #maru_1Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #maru_1Back:hover {
+        opacity: 1;
+    }
+}
+
+#maru_1.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#2maru {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #2maruPrev, #2maruNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #2maruPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #2maruNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #2maru_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #2maruBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #2maruBack:hover {
+        opacity: 1;
+    }
+}
+
+#2maru.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#2maru {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #2maruPrev, #2maruNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #2maruPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #2maruNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #2maru_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #2maruBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #2maruBack:hover {
+        opacity: 1;
+    }
+}
+
+#2maru.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#yoriiso {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #yoriisoPrev, #yoriisoNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #yoriisoPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #yoriisoNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #yoriiso_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #yoriisoBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #yoriisoBack:hover {
+        opacity: 1;
+    }
+}
+
+#yoriiso.hidden {
     transform: translate(0, -800px);
 
     @include sp {
