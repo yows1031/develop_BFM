@@ -345,7 +345,7 @@ $imgDir: "../img/";
         }
     }
     #seiyu_1Next {
-        right: 60px;
+       right: 60px;
 
         @include sp {
             left: 295px;
@@ -511,6 +511,8 @@ $imgDir: "../img/";
     }
 }
 
+
+
 #maru_1 {
     background: white;
     position: absolute;
@@ -612,7 +614,7 @@ $imgDir: "../img/";
     }
 }
 
-#2maru {
+#maru_2 {
     background: white;
     position: absolute;
     top: 210px;
@@ -625,7 +627,7 @@ $imgDir: "../img/";
         left: 5px;
     }
 
-    #2maruPrev, #2maruNext {
+    #maru_2Prev, #maru_2Next {
         position: absolute;  
         font-size: 60px;
         opacity: 0.6;
@@ -640,14 +642,14 @@ $imgDir: "../img/";
             top: 60px;
         }
     }
-    #2maruPrev {
+    #maru_2Prev {
         left: 60px;
 
         @include  sp {
             left: 10px;
         }
     }
-    #2maruNext {
+    #maru_2Next {
         right: 60px;
 
         @include sp {
@@ -656,7 +658,7 @@ $imgDir: "../img/";
     }
 
 
-    #2maru_target {
+    #maru_2_target {
         width: 350px;
         height: 250px;
         position: absolute;
@@ -671,7 +673,7 @@ $imgDir: "../img/";
         }
     }
 
-    #2maruBack {
+    #maru_2Back {
         margin-left: 20px;
         font-size: 60px;
         cursor: pointer;
@@ -700,113 +702,12 @@ $imgDir: "../img/";
             }
         }
     }
-    #2maruBack:hover {
+    #maru_2Back:hover {
         opacity: 1;
     }
 }
 
-#2maru.hidden {
-    transform: translate(0, -800px);
-
-    @include sp {
-        transform: translate(-500px, 0);
-    }
-}
-
-#2maru {
-    background: white;
-    position: absolute;
-    top: 210px;
-    left: 320px;
-    transition: .8s;
-
-    @include sp {
-        z-index: 40;
-        top: 390px;
-        left: 5px;
-    }
-
-    #2maruPrev, #2maruNext {
-        position: absolute;  
-        font-size: 60px;
-        opacity: 0.6;
-        top: 110px;
-
-        :hover {
-            opacity: 1.0;
-        }
-
-        @include sp {
-            font-size: 40px;
-            top: 60px;
-        }
-    }
-    #2maruPrev {
-        left: 60px;
-
-        @include  sp {
-            left: 10px;
-        }
-    }
-    #2maruNext {
-        right: 60px;
-
-        @include sp {
-            left: 295px;
-        }
-    }
-
-
-    #2maru_target {
-        width: 350px;
-        height: 250px;
-        position: absolute;
-        top: 30px;
-        left: 170px;
-
-        @include sp {
-            width: 200px;
-            height: 150px;
-            top: 20px;
-            left: 75px;
-        }
-    }
-
-    #2maruBack {
-        margin-left: 20px;
-        font-size: 60px;
-        cursor: pointer;
-        opacity: 0.6;
-
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
-        @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
-        }
-    }
-    #2maruBack:hover {
-        opacity: 1;
-    }
-}
-
-#2maru.hidden {
+#maru_2.hidden {
     transform: translate(0, -800px);
 
     @include sp {
