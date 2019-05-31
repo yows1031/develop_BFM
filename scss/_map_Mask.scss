@@ -146,18 +146,18 @@ main {
     #mask {
         position: absolute;
         top: 200px;
-        left: 175px;
-        width: 975px;
+        left: 5px;
+        width: 1135px;
         height: 600px;
         background-color: white;
         opacity: 0.8;
 
         @include sp {
             z-index: 30;
-            top: 380px;
+            top: 350px;
             left: 0px;
             width: 370px;
-            height: 435px;
+            height: 465px;
         }
     }
 

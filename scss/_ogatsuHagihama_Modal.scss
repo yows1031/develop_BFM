@@ -1,0 +1,411 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+#sougou {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #sougouPrev, #sougouNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sougouPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #sougouNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #sougou_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sougouBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #sougouBack:hover {
+        opacity: 1;
+    }
+}
+
+#sougou.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#hospital {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #hospitalPrev, #hospitalNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #hospitalPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #hospitalNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #hospital_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #hospitalBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #hospitalBack:hover {
+        opacity: 1;
+    }
+}
+
+#hospital.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#jouhou {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #jouhouPrev, #jouhouNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #jouhouPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #jouhouNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #jouhou_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #jouhouBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #jouhouBack:hover {
+        opacity: 1;
+    }
+}
+
+#jouhou.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#vilege {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #vilegePrev, #vilegeNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #vilegePrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #vilegeNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #vilege_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #vilegeBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #vilegeBack:hover {
+        opacity: 1;
+    }
+}
+
+#vilege.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
