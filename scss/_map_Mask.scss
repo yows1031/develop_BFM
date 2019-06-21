@@ -181,6 +181,10 @@ main {
         p {
             font-size: 14pt;
             text-align: center;
+
+            @include sp {
+                font-size: 10pt;
+            }
         }
     }
 

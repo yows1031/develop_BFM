@@ -1,0 +1,180 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 石巻バリアフリーマップ
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/kama.css')
+  body.container
+    include include/header.pug
+    main
+      .spMenu
+        i#spMenu.fas.fa-bars
+      .main
+        // サイドメニュー
+        #menu.hidden
+          ul
+            li.btn_Genki.button.is-info.is-outlined
+              p 元気の湯
+            li.btn_Nishimatsu.button.is-info.is-outlined
+              p 西松屋
+            li.btn_Daiso.button.is-info.is-outlined
+              p ダイソー
+            li.btn_Ainoya.button.is-info.is-outlined
+              p あいのや
+            li.btn_MiniStop.button.is-info.is-outlined
+              p ミニストップ
+            li.btn_Daisyogun.button.is-info.is-outlined
+              p 大将軍
+            li.btn_Utahime.button.is-info.is-outlined
+              p カラオケ歌姫
+            li.btn_Rutein.button.is-info.is-outlined
+              p ルートイン
+            li.btn_Seims.button.is-info.is-outlined
+              p セイムズ
+            li.btn_Yoshinoya.button.is-info.is-outlined
+              p 吉野屋
+            li.btn_Au.button.is-info.is-outlined
+              p ａｕショップ
+            li.btn_Docomo.button.is-info.is-outlined
+              p ドコモショップ
+            li.btn_Maruhan.button.is-info.is-outlined
+              p マルハン
+            li.btn_SoftBank.button.is-info.is-outlined
+              p ソフトバンク
+            li.btn_York.button.is-info.is-outlined
+              p ヨークベニマル
+            li.btn_Kenmin.button.is-info.is-outlined
+              p 宮城県民共済
+            li.btn_LowSon.button.is-info.is-outlined
+              p ローソン
+            li.btn_Wing.button.is-info.is-outlined
+              p Ｗｉｎｇ
+            li.btn_Hureai.button.is-info.is-outlined
+              p 上釜ふれあい広場
+        // 地図メニュー
+        .map
+          .btn_Genki.button.is-info.icon_genki
+            p 元気の湯
+          .btn_Nishimatsu.button.is-info.icon_nishimatsuya
+            p 西松屋
+          .btn_Daiso.button.is-info.icon_daiso
+            p ダイソー
+          .btn_Ainoya.button.is-info.icon_ainoya
+            p あいのや
+          .btn_MiniStop.button.is-info.icon_miniStop
+            p.fontSmall2
+              | ミニ
+              br.spMode
+              | ストップ
+          .btn_Daisyogun.button.is-info.icon_daisyogun
+            p 大将軍
+          .btn_Utahime.button.is-info.icon_utahime
+            p.fontSmall
+              | カラオケ
+              br
+              | 歌姫
+          .btn_Rutein.button.is-info.icon_routeIn
+            p.fontSmall
+              | ルート
+              br(clas='spMode')
+              | イン
+          .btn_Seims.button.is-info.icon_seims
+            p セイムス
+          .btn_Yoshinoya.button.is-info.icon_yoshinoya
+            p 吉野屋
+          .btn_Au.button.is-info.icon_au
+            p.fontSmall
+              | ａｕ
+              br
+              | ショップ
+          .btn_Docomo.button.is-info.icon_docomo
+            p.fontSmall
+              | ドコモ
+              br
+              | ショップ
+          .btn_Maruhan.button.is-info.icon_maruhan
+            p マルハン
+          .btn_SoftBank.button.is-info.icon_softbank
+            p.fontSmall
+              | ソフト
+              br
+              | バンク
+          .btn_York.button.is-info.icon_york
+            p.fontSmall
+              | ヨーク
+              br
+              | ベニマル
+          .btn_Kenmin.button.is-info.icon_kenmin
+            p.fontSmall
+              | 宮城県民
+              br
+              | 共済
+          .btn_LowSoon.button.is-info.icon_lowSon
+            p ローソン
+          .btn_Wing.button.is-info.icon_wing
+            p Ｗｉｎｇ
+          .btn_Hureai.button.is-info.icon_hureai
+            p.fontSmall2
+              | 上釜
+              br
+              | ふれあい広場
+      // マスク
+      #mask.hidden
+      // ヨークベニマル
+      table#york.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p ヨークベニマル
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：３０〜２２：００　電話92-4911
+          tr.slide
+            td.pic(colspan='9')
+              i#yorkPrev.fas.fa-chevron-circle-left
+              img#york_target
+              i#yorkNext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#york_thumbnails.subnav
+                #yorkBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
+    
+    include include/footer.pug
+    script(src='js/kama.js')
+    script(src='js/kama/york.js')
+    //- script(src='js/ogatsu_Hagihama/ogatsuHospital.js')
+    //- script(src='js/ogatsu_Hagihama/ogatsuJouhou.js')
+    //- script(src='js/ogatsu_Hagihama/ogatsuVilege.js')

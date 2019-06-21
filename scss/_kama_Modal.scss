@@ -1,0 +1,108 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+#york {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #yorkPrev, #yorkNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #yorkPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #yorkNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #york_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #yorkBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #yorkBack:hover {
+        opacity: 1;
+    }
+}
+
+#york.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
