@@ -1,0 +1,411 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+#life {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #lifePrev, #lifeNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #lifePrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #lifeNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #life_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #lifeBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #lifeBack:hover {
+        opacity: 1;
+    }
+}
+
+#life.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#hukkou {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #hukkouPrev, #hukkouNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #hukkouPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #hukkouNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #hukkou_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #hukkouBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #hukkouBack:hover {
+        opacity: 1;
+    }
+}
+
+#hukkou.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#sougou {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #sougouPrev, #sougouNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sougouPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #sougouNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #sougou_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sougouBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #sougouBack:hover {
+        opacity: 1;
+    }
+}
+
+#sougou.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}
+
+#park {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #parkPrev, #parkNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #parkPrev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+        }
+    }
+    #parkNext {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+        }
+    }
+
+
+    #park_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #parkBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        .fas.fa-caret-square-up {
+            display: block;
+        }
+
+        .fas.fa-caret-square-left {
+            display: none;
+        }
+
+        @include sp {
+            position: absolute;
+            top: 435px;
+            left: 280px;
+            font-size: 40px;
+
+            .fas.fa-caret-square-up {
+                display: none;
+            }
+
+            .fas.fa-caret-square-left {
+                display: block;
+            }
+        }
+    }
+    #parkBack:hover {
+        opacity: 1;
+    }
+}
+
+#park.hidden {
+    transform: translate(0, -800px);
+
+    @include sp {
+        transform: translate(-500px, 0);
+    }
+}

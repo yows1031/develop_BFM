@@ -17,94 +17,240 @@ html
         // サイドメニュー
         #menu.hidden
           ul
-            li.button.is-info.is-outlined
+            li.btn_Life.button.is-info.is-outlined
               p.fontSmall
                | 北上高齢者
                br
                | 生活福祉センター
-            li.button.is-info.is-outlined
+            li.btn_Hukkou.button.is-info.is-outlined
               p.fontSmall
                | 復興まちづくり
                br
                | 情報交流館
-            li.button.is-info.is-outlined
+            li.btn_Sougou.button.is-info.is-outlined
               p.fontSmall
                | 北上総合支所
                br
                | 北上保健センター
-            li.button.is-info.is-outlined
+            li.btn_Park.button.is-info.is-outlined
               p 神割崎自然公園
         // 地図メニュー
         .map
-          .button.is-info.icon_life
+          .btn_Life.button.is-info.icon_life
             p.fontSmall
                | 北上高齢者
                br
                | 生活福祉センター
-          .button.is-info.icon_hukkou
+          .btn_Hukkou.button.is-info.icon_hukkou
             p.fontSmall
                | 復興まちづくり
                br
                | 情報交流館
-          .button.is-info.icon_sougou
+          .btn_Sougou.button.is-info.icon_sougou
             p.fontSmall
                | 北上総合支所
                br
                | 北上保健センター
-          .button.is-info.icon_park
+          .btn_Park.button.is-info.icon_park
             p.fontSmall
                | 神割崎
                br
                | 自然公園
           
-          
-    //-   // マスク
-    //-   #mask.hidden
-    //-   // 市役所
-    //-   table#cityHall.hidden
-    //-     tbody
-    //-       tr.pointTittle
-    //-         th(colspan='9')
-    //-           p 石巻市役所
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/parking.png', width='30', height='30')
-    //-         td.text 専用駐車場
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/babybed_ng.png', width='30', height='30')
-    //-         td.text ベビーベッド
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
-    //-         td.text マルチシート
-    //-         td.sign なし
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
-    //-         td.text オストメイト
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/button.png', width='30', height='30')
-    //-         td.text 呼び出しボタン
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
-    //-         td.text シャワートイレ
-    //-         td.sing なし
-    //-       tr.slide
-    //-         td.pic(colspan='9')
-    //-           i#cityHallprev.fas.fa-chevron-circle-left
-    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-    //-           i#cityHallnext.fas.fa-chevron-circle-right
-    //-       tr.pointData
-    //-         td(colspan='9')
-    //-           .under
-    //-             nav
-    //-               ul#cityhall_thumbnails.subnav
-    //-             #cityHallBack
-    //-               i.fas.fa-caret-square-up
-    //-               i.fas.fa-caret-square-left
+      // マスク
+      #mask.hidden
+      // 北上高齢者生活福祉センター
+      table#life.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p 北上高齢者生活福祉センター
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１７：１５（土日祝休み）　電話67-3025
+          tr.slide
+            td.pic(colspan='9')
+              i#lifePrev.fas.fa-chevron-circle-left
+              img#life_target
+              i#lifeNext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#life_thumbnails.subnav
+                #lifeBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
+      // 復興まちづくり情報交流館
+      table#hukkou.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p 復興まちづくり情報交流館
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜１７：００（月曜祝の場合火曜）　電話98-9660
+          tr.slide
+            td.pic(colspan='9')
+              i#hukkouPrev.fas.fa-chevron-circle-left
+              img#hukkou_target
+              i#hukkouNext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#hukkou_thumbnails.subnav
+                #hukkouBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
+      // 北上総合支所北上保健センター
+      table#sougou.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p 北上高齢者生活福祉センター
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１７：００（土日祝休み）　電話67-2111
+          tr.slide
+            td.pic(colspan='9')
+              i#sougouPrev.fas.fa-chevron-circle-left
+              img#sougou_target
+              i#sougouNext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#sougou_thumbnails.subnav
+                #sougouBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
+      // 神割崎自然公園
+      table#park.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p 神割崎自然公園
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p
+          tr.slide
+            td.pic(colspan='9')
+              i#parkPrev.fas.fa-chevron-circle-left
+              img#park_target
+              i#parkNext.fas.fa-chevron-circle-right
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#park_thumbnails.subnav
+                #parkBack
+                  i.fas.fa-caret-square-up
+                  i.fas.fa-caret-square-left
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/kitakami.js')
