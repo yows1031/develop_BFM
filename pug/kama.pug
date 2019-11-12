@@ -11,10 +11,13 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        //- i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
+          .menuBorder
+            img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           ul
             li.btn_Genki.button.is-info.is-outlined
               p 元気の湯
@@ -56,6 +59,8 @@ html
               p 上釜ふれあい広場
         // 地図メニュー
         .map
+          .infomationBorder
+            img(src='icon/border.png' alt='釜地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .btn_Genki.button.is-info.icon_genki
             p 元気の湯
           .btn_Nishimatsu.button.is-info.icon_nishimatsuya
@@ -66,61 +71,43 @@ html
             p あいのや
           .btn_MiniStop.button.is-info.icon_miniStop
             p.fontSmall2
-              | ミニ
-              br.spMode
-              | ストップ
+              | ミニストップ
           .btn_Daisyogun.button.is-info.icon_daisyogun
             p 大将軍
           .btn_Utahime.button.is-info.icon_utahime
             p.fontSmall
-              | カラオケ
-              br
-              | 歌姫
+              | カラオケ歌姫
           .btn_Rutein.button.is-info.icon_routeIn
             p.fontSmall
-              | ルート
-              br(clas='spMode')
-              | イン
+              | ルートイン
           .btn_Seims.button.is-info.icon_seims
             p セイムス
           .btn_Yoshinoya.button.is-info.icon_yoshinoya
             p 吉野屋
           .btn_Au.button.is-info.icon_au
             p.fontSmall
-              | ａｕ
-              br
-              | ショップ
+              | ａｕショップ
           .btn_Docomo.button.is-info.icon_docomo
             p.fontSmall
-              | ドコモ
-              br
-              | ショップ
+              | ドコモショップ
           .btn_Maruhan.button.is-info.icon_maruhan
             p マルハン
           .btn_SoftBank.button.is-info.icon_softbank
             p.fontSmall
-              | ソフト
-              br
-              | バンク
+              | ソフトバンク
           .btn_York.button.is-info.icon_york
             p.fontSmall
-              | ヨーク
-              br
-              | ベニマル
+              | ヨークベニマル
           .btn_Kenmin.button.is-info.icon_kenmin
             p.fontSmall
-              | 宮城県民
-              br
-              | 共済
+              | 宮城県民共済
           .btn_LowSoon.button.is-info.icon_lowSon
             p ローソン
           .btn_Wing.button.is-info.icon_wing
             p Ｗｉｎｇ
           .btn_Hureai.button.is-info.icon_hureai
             p.fontSmall2
-              | 上釜
-              br
-              | ふれあい広場
+              | 上釜ふれあい広場
       // マスク
       #mask.hidden
       // ヨークベニマル
@@ -128,10 +115,13 @@ html
         tbody
           tr.pointTittle
             th(colspan='9')
-              p ヨークベニマル
+              p
+                img(src='icon/info.png', alt='ヨークベニマルのテストです。ヨークベニマルのテストです。ヨークベニマルのテストです。')
+                | ヨークベニマル
+                img#yorkBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
-              img(src='icon/parking.png', width='30', height='30')
+              img(src='icon/parking.png', width='30', height='30' alt='障がい者用の専用駐車場があります')
             td.text 専用駐車場
             td.sign あり
             td.icon
@@ -160,17 +150,17 @@ html
               p 時間：９：３０〜２２：００　電話92-4911
           tr.slide
             td.pic(colspan='9')
-              i#yorkPrev.fas.fa-chevron-circle-left
-              img#york_target
+              i#yorkPrev.fas.fa-chevron-circle-left(alt='タップすると写真のスライドショーが戻ります')
+              img#york_target(alt='ここに写真が表示されます')
               i#yorkNext.fas.fa-chevron-circle-right
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#york_thumbnails.subnav
-                #yorkBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
+                //- #yorkBack
+                //-   i.fas.fa-caret-square-up(alt='全体図に戻ります')
+                //-   i.fas.fa-caret-square-left(alt='全体図に戻ります')
     
     include include/footer.pug
     script(src='js/kama.js')

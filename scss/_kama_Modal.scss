@@ -71,6 +71,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+
         .fas.fa-caret-square-up {
             display: block;
         }
@@ -79,20 +84,20 @@ $imgDir: "../img/";
             display: none;
         }
 
-        @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+        // @include sp {
+        //     position: absolute;
+        //     top: 435px;
+        //     left: 280px;
+        //     font-size: 40px;
 
-            .fas.fa-caret-square-up {
-                display: none;
-            }
+        //     .fas.fa-caret-square-up {
+        //         display: none;
+        //     }
 
-            .fas.fa-caret-square-left {
-                display: block;
-            }
-        }
+        //     .fas.fa-caret-square-left {
+        //         display: block;
+        //     }
+        // }
     }
     #yorkBack:hover {
         opacity: 1;
@@ -100,9 +105,9 @@ $imgDir: "../img/";
 }
 
 #york.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }

@@ -6,6 +6,22 @@ $imgDir: "../img/";
   }
 }
 
+.infomationBorder {
+    position: absolute;
+    height: 30px;
+    top: 200px;
+
+    @include sp{
+        top: 378px
+    }
+}
+
+.menuBorder {
+    @include sp{
+        top: 380px
+    }
+}
+
 .spMenu {
     display: none;
     background-color: white;
@@ -167,6 +183,8 @@ main {
 
     // テーブル基本
 
+    
+
     .pointTittle {
         height: 40px;
 
@@ -174,6 +192,7 @@ main {
             font-size: 30px;
             text-align: center;
         }
+
     }
 
     .time {
