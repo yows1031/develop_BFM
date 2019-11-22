@@ -74,7 +74,7 @@ $imgDir: "../img/";
     left: 960px;
 
     @include sp {
-        width: 40px;
+        width: 60px;
         height: 25px;
         top: 590px;
         left: 300px;
@@ -110,10 +110,10 @@ $imgDir: "../img/";
     left: 990px;
 
     @include sp {
-        width: 40px;
+        width: 65px;
         height: 25px;
         top: 630px;
-        left: 305px;
+        left: 290px;
     }
 }
 
@@ -124,10 +124,10 @@ $imgDir: "../img/";
     left: 830px;
 
     @include sp {
-        width: 40px;
+        width: 55px;
         height: 25px;
-        top: 585px;
-        left: 260px;
+        top: 590px;
+        left: 244px;
     }
 
     .spMode {
@@ -148,8 +148,8 @@ $imgDir: "../img/";
     @include sp {
         width: 40px;
         height: 25px;
-        top: 575px;
-        left: 220px;
+        top: 560px;
+        left: 217px;
     }
 }
 
@@ -174,10 +174,10 @@ $imgDir: "../img/";
     left: 730px;
 
     @include sp {
-        width: 40px;
+        width: 65px;
         height: 25px;
-        top: 610px;
-        left: 225px;
+        top: 630px;
+        left: 210px;
     }
 }
 
@@ -188,7 +188,7 @@ $imgDir: "../img/";
     left: 600px;
 
     @include sp {
-        width: 40px;
+        width: 70px;
         height: 25px;
         top: 605px;
         left: 150px;
@@ -204,7 +204,7 @@ $imgDir: "../img/";
     @include sp {
         width: 40px;
         height: 25px;
-        top: 630px;
+        top: 640px;
         left: 145px;
     }
 }
@@ -216,10 +216,10 @@ $imgDir: "../img/";
     left: 390px;
 
     @include sp {
-        width: 40px;
+        width: 65px;
         height: 25px;
         top: 600px;
-        left: 100px;
+        left: 81px;
     }
 }
 
@@ -230,10 +230,10 @@ $imgDir: "../img/";
     left: 370px;
 
     @include sp {
-        width: 40px;
+        width: 73px;
         height: 25px;
-        top: 605px;
-        left: 60px;
+        top: 626px;
+        left: 70px;
     }
 }
 
@@ -244,7 +244,7 @@ $imgDir: "../img/";
     left: 300px;
 
     @include sp {
-        width: 40px;
+        width: 65px;
         height: 25px;
         top: 560px;
         left: 50px;
@@ -286,7 +286,7 @@ $imgDir: "../img/";
     left: 200px;
 
     @include sp {
-        width: 60px;
+        width: 80px;
         height: 25px;
         top: 785px;
         left: 15px;

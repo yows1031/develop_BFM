@@ -36,8 +36,8 @@ a {
     left: 185px;
 
     @include sp {
-        top: 675px;
-        left: 90px;
+        top: 687px;
+        left: 65px;
     }
 }
 .sumiyoshi {
@@ -45,61 +45,64 @@ a {
     height: 35px;
     position: absolute;
     top: 625px;
-    left: 170px;
+    left: 195px;
 
     @include sp {
-        top: 625px;
-        left: 100px;
+        top: 645px;
+        left: 56px;
     }
 }
 .hebitaEast {
     font-size: 13px;
     height: 35px;
+    width: 50px;
     position: absolute;
     top: 617px;
-    left: 120px;
+    left: 138px;
 
     @include sp {
-        width: 35px;
-        top: 635px;
-        left: 55px;
+        height: 25px;
+        top: 625px;
+        left: 4px;
     }
 }
 .hebitaWest {
     font-size: 13px;
     height: 35px;
+    width: 50px;
     position: absolute;
     top: 617px;
     left: 70px;
 
     @include sp {
-        width: 35px;
-        top: 635px;
-        left: 17px;
+        height: 25px;
+        top: 660px;
+        left: 4px;
     }
 }
 .hebitaSouth {
     font-size: 13px;
     height: 35px;
+    width: 50px;
     position: absolute;
-    top: 653px;
+    top: 660px;
     left: 90px;
 
     @include sp {
-        width: 35px;
-        top: 675px;
-        left: 35px;
+        height: 25px;
+        top: 690px;
+        left: 4px;
     }
 }
 .kama {
     font-size: 13px;
     height: 35px;
     position: absolute;
-    top: 690px;
-    left: 120px;
+    top: 703px;
+    left: 130px;
 
     @include sp {
-        top: 715px;
+        top: 725px;
         left: 50px;
     }
 }

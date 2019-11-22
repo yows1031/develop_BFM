@@ -116,7 +116,7 @@ html
           tr.pointTittle
             th(colspan='9')
               p
-                img(src='icon/info.png', alt='ヨークベニマルのテストです。ヨークベニマルのテストです。ヨークベニマルのテストです。')
+                img(src='icon/info.png', alt='ヨークベニマルです。トイレに近いのは、中央入口です。専用の駐車場あります。ベビーベットあります。オストメイトあります。呼び出しボタンあります')
                 | ヨークベニマル
                 img#yorkBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
@@ -150,17 +150,14 @@ html
               p 時間：９：３０〜２２：００　電話92-4911
           tr.slide
             td.pic(colspan='9')
-              i#yorkPrev.fas.fa-chevron-circle-left(alt='タップすると写真のスライドショーが戻ります')
+              img#yorkPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
               img#york_target(alt='ここに写真が表示されます')
-              i#yorkNext.fas.fa-chevron-circle-right
+              img#yorkNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#york_thumbnails.subnav
-                //- #yorkBack
-                //-   i.fas.fa-caret-square-up(alt='全体図に戻ります')
-                //-   i.fas.fa-caret-square-left(alt='全体図に戻ります')
     
     include include/footer.pug
     script(src='js/kama.js')

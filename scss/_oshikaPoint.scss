@@ -18,7 +18,7 @@ $imgDir: "../img/";
 
     @include sp {
         width: 40px;
-        height: 25px;
+        height: 30px;
         top: 480px;
         left: 245px;
     }
@@ -26,29 +26,29 @@ $imgDir: "../img/";
 }
 
 .icon_sougou {
-    width: 70px;
+    width: 85px;
     position: absolute;
     top: 320px;
-    left: 730px;
+    left: 720px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 70px;
+        height: 30px;
         top: 480px;
-        left: 200px;
+        left: 170px;
     }
 
 }
 
 .icon_seishin {
-    width: 70px;
+    width: 85px;
     position: absolute;
     top: 500px;
-    left: 300px;
+    left: 305px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 68px;
+        height: 30px;
         top: 600px;
         left: 52px;
     }
@@ -63,18 +63,10 @@ $imgDir: "../img/";
     
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 609px;
-        left: 10px;
-    }
-
-    .spmode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
+        width: 43px;
+        height: 30px;
+        top: 602px;
+        left: 7px;
     }
 
 }
@@ -87,24 +79,16 @@ $imgDir: "../img/";
     
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 635px;
-        left: 10px;
-    }
-
-    .spmode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
+        width: 43px;
+        height: 30px;
+        top: 633px;
+        left: 7px;
     }
 
 }
 
 .icon_hot_Maru1 {
-    width: 80px;
+    width: 150px;
     position: absolute;
     top: 590px;
     left: 180px;
@@ -116,18 +100,10 @@ $imgDir: "../img/";
         left: 5px;
     }
 
-    .spmode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
-    }
-
 }
 
 .icon_hot_Maru2 {
-    width: 80px;
+    width: 150px;
     position: absolute;
     top: 627px;
     left: 180px;
@@ -139,35 +115,19 @@ $imgDir: "../img/";
         left: 5px;
     }
 
-    .spmode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
-    }
-
 }
 
 .icon_yoriiso {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 340px;
     left: 955px;
 
     @include sp {
-        width: 40px;
+        width: 55px;
         height: 30px;
         top: 480px;
         left: 300px;
-    }
-
-    .spmode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
     }
 
 }

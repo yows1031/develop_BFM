@@ -71,27 +71,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #toyoBack:hover {
@@ -100,10 +84,10 @@ $imgDir: "../img/";
 }
 
 #toyo.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -172,27 +156,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #sogoBack:hover {
@@ -201,10 +169,10 @@ $imgDir: "../img/";
 }
 
 #sogo.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -273,27 +241,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #seishinBack:hover {
@@ -302,10 +254,10 @@ $imgDir: "../img/";
 }
 
 #seishin.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -374,27 +326,12 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            
         }
     }
     #seiyu_1Back:hover {
@@ -403,10 +340,10 @@ $imgDir: "../img/";
 }
 
 #seiyu_1.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -475,27 +412,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #seiyu_2Back:hover {
@@ -504,10 +425,10 @@ $imgDir: "../img/";
 }
 
 #seiyu_2.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -578,27 +499,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #maru_1Back:hover {
@@ -607,10 +512,10 @@ $imgDir: "../img/";
 }
 
 #maru_1.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -679,27 +584,11 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
         }
     }
     #maru_2Back:hover {
@@ -708,10 +597,10 @@ $imgDir: "../img/";
 }
 
 #maru_2.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -780,27 +669,12 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
             position: absolute;
             top: 435px;
             left: 280px;
             font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            
         }
     }
     #yoriisoBack:hover {
@@ -809,9 +683,9 @@ $imgDir: "../img/";
 }
 
 #yoriiso.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }

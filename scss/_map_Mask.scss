@@ -98,6 +98,7 @@ main {
                 width: 145px;
                 margin-left: 15px;
                 margin-top: 10px;
+                white-space: pre-wrap;
 
                 @include sp {
                     height: 50px;
@@ -154,6 +155,8 @@ main {
             .button.is-info {
                 border: solid 1px red;
                 border-radius: 3px;
+                white-space: pre-wrap;
+                padding: 0;
             }
            
         }

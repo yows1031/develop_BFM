@@ -12,10 +12,12 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
+          .menuBorder
+            img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           ul
             li.btn_Toyo.button.is-info.is-outlined
               p 東洋館
@@ -29,53 +31,35 @@ html
               p 清優館②
             li.btn_maru1.button.is-info.is-outlined
               p.fontSmall
-               | 牡鹿交流センター
-               br
-               | ほっとまる①
+               | 牡鹿交流センター ほっとまる①
             li.btn_maru2.button.is-info.is-outlined
               p.fontSmall
-               | 牡鹿交流センター
-               br
-               | ほっとまる②
+               | 牡鹿交流センター ほっとまる②
             li.btn_yoriiso.button.is-info.is-outlined
               p 寄磯診療所
         // 地図メニュー
         .map
+          .infomationBorder
+            img(src='icon/border.png' alt='牡鹿地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .btn_Toyo.button.is-info.icon_toyo
             p 東洋館
           .btn_sogo.button.is-info.icon_sougou
             p.fontSmall
-              | 牡鹿
-              br
-              | 総合支所
+              | 牡鹿総合支所
           .btn_seishin.button.is-info.icon_seishin
-            p.fontSmall 
-              | おしか
-              br.spmode
-              | 清心苑
+            p.fontSmall おしか清心苑
           .btn_seiyu1.button.is-info.icon_seiyu1
             p 清優館①
           .btn_seiyu2.button.is-info.icon_seiyu2
             p 清優館②
           .btn_maru1.button.is-info.icon_hot_Maru1
             p.fontSmall2
-              | 牡鹿交流
-              br.spmode
-              | センター
-              br
-              | ほっとまる①
+              | 牡鹿交流センターほっとまる①
           .btn_maru2.button.is-info.icon_hot_Maru2
             p.fontSmall2
-              | 牡鹿交流
-              br.spmode
-              | センター
-              br
-              | ほっとまる②
+              | 牡鹿交流センターほっとまる②
           .btn_yoriiso.button.is-info.icon_yoriiso
-            p 
-              | 寄磯
-              br.spmode
-              | 診療所
+            p 寄磯診療所
           
           
       // マスク
@@ -85,7 +69,10 @@ html
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 東洋館
+              p
+               img(src='icon/info.png', alt='東洋館です。トイレに近い入り口は、不明です。シャワートイレがあります')
+               | 東洋館
+               img#toyoBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -117,23 +104,24 @@ html
               p 時間：９：００〜１６：３０　電話：45-2206
           tr.slide
             td.pic(colspan='9')
-              i#toyoPrev.fas.fa-chevron-circle-left
-              img#toyo_target
-              i#toyoNext.fas.fa-chevron-circle-right
+              img#toyoPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#toyo_target(alt='ここに写真が表示されます')
+              img#toyoNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#toyo_thumbnails.subnav
-                #toyoBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
+
       // 牡鹿総合支所
       table#sogo.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 牡鹿総合支所
+              p
+               img(src='icon/info.png', alt='牡鹿総合支所です。トイレに近い入り口は、不明です。オストメイトあります。シャワートイレがあります')
+               | 牡鹿総合支所
+               img#sogoBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -165,23 +153,23 @@ html
               p 時間：８：３０〜１７：００（土日祝休）　電話：45-2111
           tr.slide
             td.pic(colspan='9')
-              i#sogoPrev.fas.fa-chevron-circle-left
-              img#sogo_target
-              i#sogoNext.fas.fa-chevron-circle-right
+              img#sogoPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sogo_target(alt='ここに写真が表示されます')
+              img#sogoNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#sogo_thumbnails.subnav
-                #sogoBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // おしか清心苑
       table#seishin.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p おしか清心苑
+              p
+               img(src='icon/info.png', alt='おしか清心苑です。トイレに近い入り口は、不明です。専用駐車場があります。呼び出しボタンがあります。シャワートイレがあります')
+               | おしか清心苑
+               img#seishinBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -213,23 +201,23 @@ html
               p 電話：44-1654
           tr.slide
             td.pic(colspan='9')
-              i#seishinPrev.fas.fa-chevron-circle-left
-              img#seishin_target
-              i#seishinNext.fas.fa-chevron-circle-right
+              img#seishinPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#seishin_target(alt='ここに写真が表示されます')
+              img#seishinNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#seishin_thumbnails.subnav
-                #seishinBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 清優館①
       table#seiyu_1.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 清優館①
+              p
+               img(src='icon/info.png', alt='清優館の１です。トイレに近い入り口は、不明です。専用駐車場があります。オストメイトがあります。呼び出しボタンがあります。シャワートイレがあります')
+               | 清優館①
+               img#seiyu_1Back(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -261,23 +249,23 @@ html
               p 時間：８：３０〜１７：００　電話：42-2611
           tr.slide
             td.pic(colspan='9')
-              i#seiyu_1Prev.fas.fa-chevron-circle-left
-              img#seiyu_1_target
-              i#seiyu_1Next.fas.fa-chevron-circle-right
+              img#seiyu_1Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#seiyu_1_target(alt='ここに写真が表示されます')
+              img#seiyu_1Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#seiyu_1_thumbnails.subnav
-                #seiyu_1Back
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 清優館②
       table#seiyu_2.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 清優館②
+              p
+               img(src='icon/info.png', alt='清優館の２です。トイレに近い入り口は、不明です。専用駐車場があります。呼び出しボタンがあります。シャワートイレがあります')
+               | 清優館②
+               img#seiyu_2Back(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -309,23 +297,23 @@ html
               p 時間：８：３０〜１７：００　電話：42-2611
           tr.slide
             td.pic(colspan='9')
-              i#seiyu_2Prev.fas.fa-chevron-circle-left
-              img#seiyu_2_target
-              i#seiyu_2Next.fas.fa-chevron-circle-right
+              img#seiyu_2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#seiyu_2_target(alt='ここに写真が表示されます')
+              img#seiyu_2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#seiyu_2_thumbnails.subnav
-                #seiyu_2Back
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // ほっとまる①
       table#maru_1.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 牡鹿交流センターほっとまる①
+              p
+               img(src='icon/info.png', alt='牡鹿交流センターほっとまるの１です。トイレに近い入り口は、不明です。専用駐車場があります。呼び出しボタンがあります。シャワートイレがあります')
+               | 牡鹿交流センターほっとまる①
+               img#maru_1Back(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -357,23 +345,23 @@ html
               p 時間：１３：００〜２０：００　電話：45ｰ3618
           tr.slide
             td.pic(colspan='9')
-              i#maru_1Prev.fas.fa-chevron-circle-left
-              img#maru_1_target
-              i#maru_1Next.fas.fa-chevron-circle-right
+              img#maru_1Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#maru_1_target(alt='ここに写真が表示されます')
+              img#maru_1Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#maru_1_thumbnails.subnav
-                #maru_1Back
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // ほっとまる②
       table#maru_2.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 牡鹿交流センターほっとまる②
+              p
+               img(src='icon/info.png', alt='牡鹿交流センターほっとまるの２です。トイレに近い入り口は、不明です。専用駐車場があります。呼び出しボタンがあります。シャワートイレがあります')
+               | 牡鹿交流センターほっとまる②
+               img#maru_2Back(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -405,23 +393,23 @@ html
               p 時間:１３：００〜２０：００　電話：45ｰ3618
           tr.slide
             td.pic(colspan='9')
-              i#maru_2Prev.fas.fa-chevron-circle-left
-              img#maru_2_target
-              i#maru_2Next.fas.fa-chevron-circle-right
+              img#maru_2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#maru_2_target(alt='ここに写真が表示されます')
+              img#maru_2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#maru_2_thumbnails.subnav
-                #maru_2Back
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 寄磯診療所
       table#yoriiso.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 寄磯診療所
+              p
+               img(src='icon/info.png', alt='寄磯診療所です。トイレに近い入り口は、不明です。専用駐車場があります。オストメイトあります。呼び出しボタンがあります。シャワートイレがあります')
+               | 寄磯診療所
+               img#yoriisoBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -453,17 +441,14 @@ html
               p 時間：９：００〜１６：００　電話:48-
           tr.slide
             td.pic(colspan='9')
-              i#yoriisoPrev.fas.fa-chevron-circle-left
-              img#yoriiso_target
-              i#yoriisoNext.fas.fa-chevron-circle-right
+              img#yoriisoPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#yoriiso_target(alt='ここに写真が表示されます')
+              img#yoriisoNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#yoriiso_thumbnails.subnav
-                #yoriisoBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       
     include include/footer.pug
     
