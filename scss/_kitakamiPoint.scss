@@ -11,14 +11,14 @@ $imgDir: "../img/";
 }
 
 .icon_life {
-    width: 110px;
+    width: 105px;
     position: absolute;
     top: 270px;
     left: 810px;
 
     @include sp {
         width: 80px;
-        height: 25px;
+        height: 30px;
         top: 430px;
         left: 230px;
     }
@@ -31,36 +31,36 @@ $imgDir: "../img/";
     left: 580px;
 
     @include sp {
-        width: 70px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
         top: 540px;
         left: 125px;
     }
 }
 
 .icon_sougou {
-    width: 110px;
+    width: 115px;
     position: absolute;
     top: 645px;
     left: 370px;
 
     @include sp {
-        width: 80px;
-        height: 25px;
+        width: 90px;
+        height: 30px;
         top: 715px;
         left: 75px;
     }
 }
 
 .icon_park {
-    width: 70px;
+    width: 100px;
     position: absolute;
     top: 300px;
     left: 300px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 60px;
+        height: 30px;
         top: 460px;
         left: 30px;
     }

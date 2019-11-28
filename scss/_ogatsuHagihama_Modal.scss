@@ -100,10 +100,10 @@ $imgDir: "../img/";
 }
 
 #sougou.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -201,10 +201,10 @@ $imgDir: "../img/";
 }
 
 #hospital.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -302,10 +302,10 @@ $imgDir: "../img/";
 }
 
 #jouhou.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -403,9 +403,9 @@ $imgDir: "../img/";
 }
 
 #vilege.hidden {
-    transform: translate(0, -800px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-500px, 0);
+        transform: translate(-550px, 0);
     }
 }

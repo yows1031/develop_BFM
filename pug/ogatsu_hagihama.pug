@@ -12,10 +12,12 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
+          .menuBorder
+            img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           .menuArea
             p 雄勝地区
           ul
@@ -25,9 +27,7 @@ html
               p 雄勝診療所
             li.btn_jouhou.button.is-info.is-outlined
               p.fontSmall
-               | 復興まちづくり
-               br
-               | 情報交流館
+               | 復興まちづくり情報交流館
           .menuArea
             p 萩浜地区
           ul
@@ -35,29 +35,22 @@ html
               p 牡鹿ビレッジ
         // 地図メニュー
         .map
+          .infomationBorder
+            img(src='icon/border.png' alt='雄勝、萩浜地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .icon_ogatsu.Area
             p 雄勝地区
           .btn_sougou.button.is-info.icon_sougou
             p.fontSmall
-              | 雄勝
-              br
-              | 総合支所
+              | 雄勝総合支所
           .btn_hospital.button.is-info.icon_hospital
-            p.fontSmall 
-              | 雄勝診療所
+            p.fontSmall 雄勝診療所
           .btn_jouhou.button.is-info.icon_jouhou
             p.fontSmall
-              | 復興まちづくり
-              br
-              | 情報交流館
+              | 復興まちづくり情報交流館
           .icon_hagihama.Area
             p 萩浜地区
           .btn_vilege.button.is-info.icon_vilege
-            p.fontSmall
-              | 牡鹿
-              br
-              | ビレッジ         
-          
+            p.fontSmall 牡鹿ビレッジ
       // マスク
       #mask.hidden
       // 雄勝総合支所
@@ -65,7 +58,10 @@ html
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 雄勝総合支所
+              p
+                img(src='icon/info.png', alt='雄勝総合支所です。トイレに近いのは、不明です。ベビーベッドがあります。シャワートイレあります。')
+                | 雄勝総合支所
+                img#sougouBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -97,23 +93,23 @@ html
               p 時間：８：３０〜１７：００（土日祝休み）　電話57ｰ2111
           tr.slide
             td.pic(colspan='9')
-              i#sougouPrev.fas.fa-chevron-circle-left
-              img#sougou_target
-              i#sougouNext.fas.fa-chevron-circle-right
+              img#sougouPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sougou_target(alt='ここに写真が表示されます')
+              img#sougouNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#sougou_thumbnails.subnav
-                #sougouBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 雄勝診療所
       table#hospital.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 雄勝診療所
+              p
+                img(src='icon/info.png', alt='雄勝診療所です。トイレに近いのは、不明です。専用駐車場あります。シャワートイレあります。')
+                | 雄勝診療所
+                img#hospitalBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -145,23 +141,23 @@ html
               p 時間：９：００〜１６：００（土日祝休み）　電話58ｰ3373
           tr.slide
             td.pic(colspan='9')
-              i#hospitalPrev.fas.fa-chevron-circle-left
-              img#hospital_target
-              i#hospitalNext.fas.fa-chevron-circle-right
+              img#hospitalPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#hospital_target(alt='ここに写真が表示されます')
+              img#hospitalNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#hospital_thumbnails.subnav
-                #hospitalBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 復興まちづくり情報館
       table#jouhou.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 復興まちづくり情報交流館
+              p
+                img(src='icon/info.png', alt='復興まちづくり情報交流館です。トイレに近いのは、不明です。ベビーベッドあります。シャワートイレあります。')
+                | 復興まちづくり情報交流館
+                img#jouhouBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -193,23 +189,23 @@ html
               p 時間：９：００〜１７：００（火曜休み）　電話25ｰ6028
           tr.slide
             td.pic(colspan='9')
-              i#jouhouPrev.fas.fa-chevron-circle-left
-              img#jouhou_target
-              i#jouhouNext.fas.fa-chevron-circle-right
+              img#jouhouPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#jouhou_target(alt='ここに写真が表示されます')
+              img#jouhouNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#jouhou_thumbnails.subnav
-                #jouhouBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
       // 牡鹿ビレッジ
       table#vilege.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
-              p 牡鹿ビレッジ
+              p
+                img(src='icon/info.png', alt='牡鹿ビレッジです。トイレに近いのは、不明です。ベビーベッドあります。')
+                | 牡鹿ビレッジ
+                img#vilegeBack(src='icon/back.png', alt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -241,17 +237,14 @@ html
               p 時間：９：００〜１８：００
           tr.slide
             td.pic(colspan='9')
-              i#vilegePrev.fas.fa-chevron-circle-left
-              img#vilege_target
-              i#vilegeNext.fas.fa-chevron-circle-right
+              img#vilegePrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#vilege_target(alt='ここに写真が表示されます')
+              img#vilegeNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
                   ul#vilege_thumbnails.subnav
-                #vilegeBack
-                  i.fas.fa-caret-square-up
-                  i.fas.fa-caret-square-left
     include include/footer.pug
     
     script(src='js/ogatsu_Hagihama.js')

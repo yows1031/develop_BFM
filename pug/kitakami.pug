@@ -12,50 +12,40 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
+          .menuBorder
+            img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           ul
             li.btn_Life.button.is-info.is-outlined
               p.fontSmall
-               | 北上高齢者
-               br
-               | 生活福祉センター
+               | 北上高齢者生活　福祉センター
             li.btn_Hukkou.button.is-info.is-outlined
               p.fontSmall
-               | 復興まちづくり
-               br
-               | 情報交流館
+               | 復興まちづくり　情報交流館
             li.btn_Sougou.button.is-info.is-outlined
               p.fontSmall
-               | 北上総合支所
-               br
-               | 北上保健センター
+               | 北上総合支所北上保健センター
             li.btn_Park.button.is-info.is-outlined
               p 神割崎自然公園
         // 地図メニュー
         .map
+          .infomationBorder
+            img(src='icon/border.png' alt='北上地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .btn_Life.button.is-info.icon_life
             p.fontSmall
-               | 北上高齢者
-               br
-               | 生活福祉センター
+               | 北上高齢者生活福祉センター
           .btn_Hukkou.button.is-info.icon_hukkou
             p.fontSmall
-               | 復興まちづくり
-               br
-               | 情報交流館
+               | 復興まちづくり情報交流館
           .btn_Sougou.button.is-info.icon_sougou
             p.fontSmall
-               | 北上総合支所
-               br
-               | 北上保健センター
+               | 北上総合支所北上保健センター
           .btn_Park.button.is-info.icon_park
             p.fontSmall
-               | 神割崎
-               br
-               | 自然公園
+               | 神割崎自然公園
           
       // マスク
       #mask.hidden
