@@ -38,6 +38,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -45,6 +46,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -71,27 +73,9 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #sougouBack:hover {
@@ -139,6 +123,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -146,6 +131,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -172,27 +158,9 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #hospitalBack:hover {
@@ -219,6 +187,11 @@ $imgDir: "../img/";
         z-index: 40;
         top: 390px;
         left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+
     }
 
     #jouhouPrev, #jouhouNext {
@@ -240,6 +213,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -247,6 +221,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -272,28 +247,10 @@ $imgDir: "../img/";
         font-size: 60px;
         cursor: pointer;
         opacity: 0.6;
-
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
+        
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #jouhouBack:hover {
@@ -341,6 +298,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -348,6 +306,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -373,28 +332,10 @@ $imgDir: "../img/";
         font-size: 60px;
         cursor: pointer;
         opacity: 0.6;
-
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
+        
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #vilegeBack:hover {

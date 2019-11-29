@@ -39,6 +39,7 @@ $imgDir: "../img/";
 
         @include  sp {
             left: 10px;
+            width: 60px;
         }
     }
     #toyoNext {
@@ -46,6 +47,7 @@ $imgDir: "../img/";
 
         @include sp {
             left: 295px;
+            width: 60px;
         }
     }
 
@@ -72,10 +74,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #toyoBack:hover {
@@ -123,6 +123,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -130,6 +131,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -157,10 +159,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #sogoBack:hover {
@@ -208,6 +208,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -215,6 +216,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -242,10 +244,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #seishinBack:hover {
@@ -293,6 +293,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -300,6 +301,7 @@ $imgDir: "../img/";
        right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -327,11 +329,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-            
+            width: 70px;
+            height: 30px;
         }
     }
     #seiyu_1Back:hover {
@@ -379,6 +378,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -386,6 +386,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -413,10 +414,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #seiyu_2Back:hover {
@@ -466,6 +465,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -473,6 +473,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -500,10 +501,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #maru_1Back:hover {
@@ -551,6 +550,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -558,6 +558,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -585,10 +586,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
+            width: 70px;
+            height: 30px;
         }
     }
     #maru_2Back:hover {
@@ -636,6 +635,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -643,6 +643,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -670,11 +671,8 @@ $imgDir: "../img/";
         opacity: 0.6;
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-            
+            width: 70px;
+            height: 30px;
         }
     }
     #yoriisoBack:hover {
