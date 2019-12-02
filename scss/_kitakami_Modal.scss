@@ -17,6 +17,10 @@ $imgDir: "../img/";
         z-index: 40;
         top: 390px;
         left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
     }
 
     #lifePrev, #lifeNext {
@@ -38,6 +42,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -45,6 +50,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -71,27 +77,10 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
 
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #lifeBack:hover {
@@ -100,10 +89,10 @@ $imgDir: "../img/";
 }
 
 #life.hidden {
-    transform: translate(0, -950px);
+    transform: translate(0, -850px);
 
     @include sp {
-        transform: translate(-650px, 0);
+        transform: translate(-550px, 0);
     }
 }
 
@@ -118,6 +107,10 @@ $imgDir: "../img/";
         z-index: 40;
         top: 390px;
         left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
     }
 
     #hukkouPrev, #hukkouNext {
@@ -139,6 +132,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -146,6 +140,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -172,27 +167,9 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #hukkouBack:hover {
@@ -219,6 +196,10 @@ $imgDir: "../img/";
         z-index: 40;
         top: 390px;
         left: 5px;
+
+        .pointTittle P {
+            font-size: 10pt;
+        }
     }
 
     #sougouPrev, #sougouNext {
@@ -240,6 +221,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -247,6 +229,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -273,27 +256,9 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #sougouBack:hover {
@@ -320,6 +285,10 @@ $imgDir: "../img/";
         z-index: 40;
         top: 390px;
         left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
     }
 
     #parkPrev, #parkNext {
@@ -341,6 +310,7 @@ $imgDir: "../img/";
         left: 60px;
 
         @include  sp {
+            width: 60px;
             left: 10px;
         }
     }
@@ -348,6 +318,7 @@ $imgDir: "../img/";
         right: 60px;
 
         @include sp {
+            width: 60px;
             left: 295px;
         }
     }
@@ -374,27 +345,9 @@ $imgDir: "../img/";
         cursor: pointer;
         opacity: 0.6;
 
-        .fas.fa-caret-square-up {
-            display: block;
-        }
-
-        .fas.fa-caret-square-left {
-            display: none;
-        }
-
         @include sp {
-            position: absolute;
-            top: 435px;
-            left: 280px;
-            font-size: 40px;
-
-            .fas.fa-caret-square-up {
-                display: none;
-            }
-
-            .fas.fa-caret-square-left {
-                display: block;
-            }
+            width: 70px;
+            height: 30px;
         }
     }
     #parkBack:hover {

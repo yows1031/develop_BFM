@@ -12,103 +12,46 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
           ul
             li.button.is-info.is-outlined
               p.fontSmall
-               | 農業者
-               br
-               | トレーニングセンター
+               | 農業者トレー　　ニングセンター
             li.button.is-info.is-outlined
               p ツルハドラッグ
             li.button.is-info.is-outlined
               p 桃生総合支所
             li.button.is-info.is-outlined
               p.fontSmall
-               | 桃生地域
-               br
-               | 福祉センター
+               | 桃生地域福祉　　センター
             li.button.is-info.is-outlined
-              p ファミリーマート
+              p ファミリー　　マート
         // 地図メニュー
         .map
+          .infomationBorder
+            img(src='icon/border.png' alt='桃生地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .button.is-info.icon_traning
             p.fontSmall2
-               | 農業者
-               br
-               | トレーニングセンター
+               | 農業者トレーニングセンター
           .button.is-info.icon_tsuruha
             p.fontSmall
-               | ツルハ
-               br
-               | ドラッグ
+               | ツルハドラッグ
           .button.is-info.icon_sougo
             p.fontSmall
-               | 桃生
-               br
-               | 総合支所
+               | 桃生総合支所
           .button.is-info.icon_center
             p.fontSmall
-               | 桃生地域
-               br
-               | 福祉センター
+               | 桃生地域福祉センター
           .button.is-info.icon_familyMart
             p.fontSmall
-               | ファミリー
-               br
-               | マート
+               | ファミリーマート
           
           
-    //-   // マスク
-    //-   #mask.hidden
-    //-   // 市役所
-    //-   table#cityHall.hidden
-    //-     tbody
-    //-       tr.pointTittle
-    //-         th(colspan='9')
-    //-           p 石巻市役所
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/parking.png', width='30', height='30')
-    //-         td.text 専用駐車場
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/babybed_ng.png', width='30', height='30')
-    //-         td.text ベビーベッド
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
-    //-         td.text マルチシート
-    //-         td.sign なし
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
-    //-         td.text オストメイト
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/button.png', width='30', height='30')
-    //-         td.text 呼び出しボタン
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
-    //-         td.text シャワートイレ
-    //-         td.sing なし
-    //-       tr.slide
-    //-         td.pic(colspan='9')
-    //-           i#cityHallprev.fas.fa-chevron-circle-left
-    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-    //-           i#cityHallnext.fas.fa-chevron-circle-right
-    //-       tr.pointData
-    //-         td(colspan='9')
-    //-           .under
-    //-             nav
-    //-               ul#cityhall_thumbnails.subnav
-    //-             #cityHallBack
-    //-               i.fas.fa-caret-square-up
-    //-               i.fas.fa-caret-square-left
+      // マスク
+      #mask.hidden
     include include/footer.pug
     
     script(src='js/station.js')

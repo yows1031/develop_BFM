@@ -86,7 +86,7 @@ main {
                 color: black;
 
                 @include sp {
-                    font-size: 12pt
+                    font-size: 10pt
                 }
 
                 .fontSmall {
@@ -96,6 +96,7 @@ main {
 
             .button {
                 width: 145px;
+                height: 45px;
                 margin-left: 15px;
                 margin-top: 10px;
                 white-space: pre-wrap;
