@@ -1,0 +1,637 @@
+$sp: 470px;  // スマホ
+$imgDir: "../img/";
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+#traning {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #traningPrev, #traningNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #traningPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #traningNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #traning_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #traningBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #traningBack:hover {
+        opacity: 1;
+    }
+}
+
+#traning.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#tsuruha {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #tsuruhaPrev, #tsuruhaNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #tsuruhaPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #tsuruhaNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #tsuruha_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #tsuruhaBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #tsuruhaBack:hover {
+        opacity: 1;
+    }
+}
+
+#tsuruha.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#sougou1 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #sougou1Prev, #sougou1Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sougou1Prev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #sougou1Next {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #sougou1_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sougou1Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #sougou1Back:hover {
+        opacity: 1;
+    }
+}
+
+#sougou1.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#sougou2 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #sougou2Prev, #sougou2Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sougou2Prev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #sougou2Next {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #sougou2_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sougou2Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #sougou2Back:hover {
+        opacity: 1;
+    }
+}
+
+#sougou2.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#sougou2 {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #sougou2Prev, #sougou2Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #sougou2Prev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #sougou2Next {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #sougou2_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #sougou2Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #sougou2Back:hover {
+        opacity: 1;
+    }
+}
+
+#sougou2.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#hukushi {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #hukushiPrev, #hukushiNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #hukushiPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #hukushiNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #hukushi_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #hukushiBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #hukushiBack:hover {
+        opacity: 1;
+    }
+}
+
+#hukushi.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#familyMart {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #familyMartPrev, #familyMartNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #familyMartPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #familyMartNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #familyMart_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #familyMartBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #familyMartBack:hover {
+        opacity: 1;
+    }
+}
+
+#familyMart.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}

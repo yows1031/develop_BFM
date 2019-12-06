@@ -18,51 +18,65 @@ $imgDir: "../img/";
 
     @include sp {
         width: 100px;
-        height: 25px;
+        height:30px;
         top: 570px;
         left: 265px;
     }
 }
 
 .icon_tsuruha {
-    width: 70px;
+    width: 95px;
     position: absolute;
     top: 450px;
     left: 460px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
         top: 560px;
         left: 90px;
     }
 }
 
-.icon_sougo {
-    width: 70px;
+.icon_sougo1 {
+    width: 85px;
     position: absolute;
     top: 545px;
     left: 465px;
 
     @include sp {
         width: 50px;
-        height: 25px;
+        height: 30px;
         top: 635px;
         left: 120px;
     }
 }
 
-.icon_center {
-    width: 80px;
+.icon_sougo2 {
+    width: 85px;
     position: absolute;
-    top: 520px;
-    left: 380px;
+    top: 582px;
+    left: 465px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 50px;
+        height: 30px;
+        top: 636px;
+        left: 172px;
+    }
+}
+
+.icon_center {
+    width: 85px;
+    position: absolute;
+    top: 530px;
+    left: 355px;
+
+    @include sp {
+        width: 68px;
+        height: 30px;
         top: 610px;
-        left: 70px;
+        left: 49px;
     }
 }
 
@@ -73,8 +87,8 @@ $imgDir: "../img/";
     left: 280px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 65px;
+        height: 30px;
         top: 755px;
         left: 20px;
     }

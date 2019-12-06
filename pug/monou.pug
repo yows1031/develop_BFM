@@ -17,41 +17,340 @@ html
         // サイドメニュー
         #menu.hidden
           ul
-            li.button.is-info.is-outlined
+            li.btn_Traning.button.is-info.is-outlined
               p.fontSmall
                | 農業者トレー　　ニングセンター
-            li.button.is-info.is-outlined
+            li.btn_Tusruha.button.is-info.is-outlined
               p ツルハドラッグ
-            li.button.is-info.is-outlined
-              p 桃生総合支所
-            li.button.is-info.is-outlined
+            li.btn_Sougou1.button.is-info.is-outlined
+              p 桃生総合支所１
+            li.btn_Sougou2.button.is-info.is-outlined
+              p 桃生総合支所２
+            li.btn_Hukushi.button.is-info.is-outlined
               p.fontSmall
                | 桃生地域福祉　　センター
-            li.button.is-info.is-outlined
+            li.btn_FamilyMart.button.is-info.is-outlined
               p ファミリー　　マート
         // 地図メニュー
         .map
           .infomationBorder
             img(src='icon/border.png' alt='桃生地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
-          .button.is-info.icon_traning
+          .btn_Traning.button.is-info.icon_traning
             p.fontSmall2
                | 農業者トレーニングセンター
-          .button.is-info.icon_tsuruha
+          .btn_Tsuruha.button.is-info.icon_tsuruha
             p.fontSmall
                | ツルハドラッグ
-          .button.is-info.icon_sougo
+          .btn_Sougou1.button.is-info.icon_sougo1
             p.fontSmall
-               | 桃生総合支所
-          .button.is-info.icon_center
+               | 桃生総合支所１
+          .btn_Sougou2.button.is-info.icon_sougo2
+            p.fontSmall
+               | 桃生総合支所２
+          .btn_Hukushi.button.is-info.icon_center
             p.fontSmall
                | 桃生地域福祉センター
-          .button.is-info.icon_familyMart
+          .btm_FamilyMart.button.is-info.icon_familyMart
             p.fontSmall
                | ファミリーマート
           
           
       // マスク
       #mask.hidden
+      // 農業者トレーニングセンター
+      table#traning.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='農業者トレーニングセンターです。トイレに近いのは、不明です。専用駐車場があります。オストメイトあります。')
+                | 農業者トレーニングセンター
+                img#traningBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間９：００〜１７：００（月曜もしくは月祝の翌日休み）　電話76-4565
+          tr.slide
+            td.pic(colspan='9')
+              img#traningPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#traning_target(alt='ここに写真が表示されます')
+              img#traningNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#traning_thumbnails.subnav
+      // ツルハドラッグ
+      table#tsuruha.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ツルハドラッグです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。シャワートイレあります。')
+                | ツルハドラッグ
+                img#tsuruhaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２２：００　電話79-3803
+          tr.slide
+            td.pic(colspan='9')
+              img#tsuruhaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#tsuruha_target(alt='ここに写真が表示されます')
+              img#tsuruhaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#tsuruha_thumbnails.subnav
+      // 桃生総合支所１階
+      table#sougou1.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='桃生総合支所２階です。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。オストメイトあります。呼び出しボタンあります。シャワートイレあります。')
+                | 桃生総合支所１階
+                img#sougou1Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１７：００（土日祝休み）　電話76-2111
+          tr.slide
+            td.pic(colspan='9')
+              img#sougou1Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sougou1_target(alt='ここに写真が表示されます')
+              img#sougou1Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#sougou1_thumbnails.subnav
+      // 桃生総合支所２階
+      table#sougou2.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='桃生総合支所２階です。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。オストメイトあります。呼び出しボタンあります。シャワートイレあります。')
+                | 桃生総合支所２階
+                img#sougou2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１７：００（土日祝休み）　電話76-2111
+          tr.slide
+            td.pic(colspan='9')
+              img#sougou2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sougou2_target(alt='ここに写真が表示されます')
+              img#sougou2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#sougou2_thumbnails.subnav
+      // 桃生地域福祉センター
+      table#hukushi.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='桃生地域福祉センターです。トイレに近いのは、不明です。呼び出しボタンあります。シャワートイレあります。')
+                | 桃生地域福祉センター
+                img#hukushiBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１７：１５（土日祝休み）　電話75-5206
+          tr.slide
+            td.pic(colspan='9')
+              img#hukushiPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#hukushi_target(alt='ここに写真が表示されます')
+              img#hukushiNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#hukushi_thumbnails.subnav
+      // ファミリーマート
+      table#familyMart.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ファミリーマートです。トイレに近いのは、不明です。シャワートイレあります。')
+                | ファミリーマート
+                img#familyMartBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：２４時間　電話76-5027
+          tr.slide
+            td.pic(colspan='9')
+              img#familyMartPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#familyMart_target(alt='ここに写真が表示されます')
+              img#familyMartNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#familyMart_thumbnails.subnav
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/monou.js')
+    script(src='js/monou/traning.js')
+    script(src='js/monou/tusruha.js')
+    script(src='js/monou/sougou1.js')
+    script(src='js/monou/sougou2.js')
+    script(src='js/monou/hukusi.js')
+    script(src='js/monou/familyMart.js')
