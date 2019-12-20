@@ -38,7 +38,7 @@ $imgDir: "../img/";
 
 .icon_maeyachi {
     position: absolute;
-    top: 200px;
+    top: 235px;
     left: 175px;
 
     @include sp {
@@ -50,16 +50,16 @@ $imgDir: "../img/";
 
 .icon_sougou {
 
-    width: 70px;
+    width: 85px;
     position: absolute;
     top: 290px;
     left: 395px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 465px;
-        left: 65px;
+        width: 50px;
+        height: 30px;
+        top: 457px;
+        left: 48px;
     }
 }
 
@@ -71,8 +71,8 @@ $imgDir: "../img/";
     left: 315px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 67px;
+        height: 30px;
         top: 425px;
         left: 20px;
     }
@@ -80,15 +80,15 @@ $imgDir: "../img/";
 
 .icon_kananHall {
 
-    width: 70px;
+    width: 90px;
     position: absolute;
     top: 380px;
     left: 420px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
-        top: 515px;
+        width: 72px;
+        height: 30px;
+        top: 509px;
         left: 75px;
     }
 }
@@ -101,23 +101,23 @@ $imgDir: "../img/";
     left: 390px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 65px;
+        height: 30px;
         top: 541px;
-        left: 45px;
+        left: 40px;
     }
 }
 
 .icon_display {
 
-    width: 70px;
+    width: 86px;
     position: absolute;
     top: 417px;
     left: 460px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 73px;
+        height: 30px;
         top: 541px;
         left: 106px;
     }
@@ -125,7 +125,7 @@ $imgDir: "../img/";
 
 .icon_kanomata {
     position: absolute;
-    top: 200px;
+    top: 235px;
     left: 675px;
 
     @include sp {
@@ -137,31 +137,31 @@ $imgDir: "../img/";
 
 .icon_sevenEleven {
 
-    width: 70px;
+    width: 55px;
     position: absolute;
-    top: 210px;
+    top: 231px;
     left: 1060px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 50px;
+        height: 30px;
         top: 395px;
-        left: 330px;
+        left: 314px;
     }
 }
 
 .icon_big {
 
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 465px;
-    left: 800px;
+    left: 850px;
 
     @include sp {
-        width: 50px;
-        height: 20px;
-        top: 575px;
-        left: 220px;
+        width: 55px;
+        height: 30px;
+        top: 566px;
+        left: 214px;
     }
 }
 
@@ -179,20 +179,20 @@ $imgDir: "../img/";
 
 .icon_tsuruha {
 
-    width: 70px;
+    width: 95px;
     position: absolute;
     top: 625px;
-    left: 575px;
+    left: 564px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 690px;
-        left: 150px;
+        width: 50px;
+        height: 30px;
+        top: 685px;
+        left: 140px;
     }
 }
 
-.icon_familyMart2 {
+.icon_familyMart {
 
     width: 70px;
     position: absolute;
@@ -200,8 +200,8 @@ $imgDir: "../img/";
     left: 410px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 56px;
+        height: 30px;
         top: 715px;
         left: 50px;
     }
@@ -223,20 +223,20 @@ $imgDir: "../img/";
 
 .icon_sevenEleven2 {
 
-    width: 70px;
+    width: 55px;
     position: absolute;
     top: 510px;
     left: 935px;
 
     @include sp {
-        width: 45px;
-        height: 25px;
+        width: 49px;
+        height: 30px;
         top: 605px;
-        left: 295px;
+        left: 296px;
     }
 }
 
-.icon_familyMart3 {
+.icon_familyMart2 {
 
     width: 70px;
     position: absolute;
@@ -244,10 +244,10 @@ $imgDir: "../img/";
     left: 995px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 56px;
+        height: 30px;
         top: 685px;
-        left: 315px;
+        left: 275px;
     }
 }
 
@@ -259,9 +259,9 @@ $imgDir: "../img/";
     left: 840px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
-        top: 745px;
+        width: 55px;
+        height: 30px;
+        top: 740px;
         left: 235px;
     }
 }
@@ -274,8 +274,8 @@ $imgDir: "../img/";
     left: 840px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 55px;
+        height: 30px;
         top: 771px;
         left: 235px;
     }
