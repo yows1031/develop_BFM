@@ -21,44 +21,44 @@ html
           .menuArea
             p 前谷地地区
           ul
-            li.button.is-info.is-outlined
+            li.btn_Sougou.button.is-info.is-outlined
               p 河南総合支所
-            li.button.is-info.is-outlined
+            li.btn_Hkushi.button.is-info.is-outlined
               p.fontSmall
                 | 河南老人福祉　　センター
-            li.button.is-info.is-outlined
+            li.btn_KananHall.button.is-info.is-outlined
               p.fontSmall
                 | 河南遊楽館　　（河南ホール）
-            li.button.is-info.is-outlined
+            li.btn_Library.button.is-info.is-outlined
               p.fontSmall
                 | 河南遊楽館　　（図書室側）
-            li.button.is-info.is-outlined
+            li.btn_Display.button.is-info.is-outlined
               p.fontSmall
                 | 河南遊楽館　　（展示コーナー）
           .menuArea
             p 鹿又地区
           ul
-            li.button.is-info.is-outlined
-              p 
-            li.button.is-info.is-outlined
+            li.btn_SevenEleven.button.is-info.is-outlined
+              p セブンイレブン
+            li.btn_Big.button.is-info.is-outlined
               p ザ・ビック
           .menuArea
             p 広渕地区
           ul
-            li.button.is-info.is-outlined
+            li.btn_Tsuruha.button.is-info.is-outlined
               p ツルハドラッグ
-            li.button.is-info.is-outlined
+            li.btn_FamilyMart.button.is-info.is-outlined
               p ファミリー　　マート
           .menuArea
             p 須江地区
           ul
-            li.button.is-info.is-outlined
-              p 
-            li.button.is-info.is-outlined
+            li.btn_SevenEleven2.button.is-info.is-outlined
+              p セブンイレブン
+            li.btn_FamilyMart2.button.is-info.is-outlined
               p ファミリー　　マート
-            li.button.is-info.is-outlined
+            li.btn_Park1.button.is-info.is-outlined
               p 中央公園　　（野球場）
-            li.button.is-info.is-outlined
+            li.btn_park2.button.is-info.is-outlined
               p 中央公園（外）
         // 地図メニュー
         .map
@@ -66,37 +66,37 @@ html
             img(src='icon/border.png' alt='河南地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .icon_maeyachi.Area
             p 前谷地地区
-          .button.is-info.icon_sougou
+          .btn_Sougou.button.is-info.icon_sougou
             p.fontSmall 河南総合支所
-          .button.is-info.icon_hukushi
+          .btn_Hukushi.button.is-info.icon_hukushi
             p.fontSmall2 河南老人福祉センター
-          .button.is-info.icon_library
-            p.fontSmall2 
-          .button.is-info.icon_library
+          .btn_kananHall.button.is-info.icon_kananHall
+            p.fontSmall2 河南遊楽館（河南ホール）
+          .btn_Library.button.is-info.icon_library
             p.fontSmall2 河南遊楽館（図書室側）
-          .button.is-info.icon_display
+          .btn_Display.button.is-info.icon_display
             p.fontSmall2 河南遊楽館（展示コーナー）
           .icon_kanomata.Area
             p 鹿又地区
-          .button.is-info.icon_familyMart2
-            p.fontSmall 
-          .button.is-info.icon_big
+          .btn_sevenEleven.button.is-info.icon_sevenEleven
+            p.fontSmall セブンイレブン
+          .btn_Big.button.is-info.icon_big
             p ザ・ビッグ
           .icon_hirobuchi.Area
             p 広渕地区
-          .button.is-info.icon_tsuruha
+          .btn_Tsuruha.button.is-info.icon_tsuruha
             p.fontSmall ツルハドラッグ
-          .button.is-info.icon_familyMart
+          .btn_familyMart.button.is-info.icon_familyMart
             p.fontSmall ファミリーマート
           .icon_sue.Area
             p 須江地区
-          .button.is-info.icon_familyMart22
-            p.fontSmall 
-          .button.is-info.icon_familyMart2
+          .btn_sevenEleven2.button.is-info.icon_sevenEleven2
+            p.fontSmall セブンイレブン
+          .btn_FamilyMart2.button.is-info.icon_familyMart2
             p.fontSmall ファミリーマート
-          .button.is-info.icon_park1
+          .btn_Park1.button.is-info.icon_park1
             p.fontSmall 中央公園(野球場)
-          .button.is-info.icon_park2
+          .btn_park2.button.is-info.icon_park2
             p.fontSmall 中央公園(外)
                    
           
@@ -343,14 +343,14 @@ html
                 nav
                   ul#display_thumbnails.subnav
       // 
-      table#familyMart2.hidden
+      table#sevenEleven2.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
               p
                 img(src='icon/info.png', alt='です。トイレに近いのは、不明です。シャワートイレあります。')
                 | 
-                img#familyMart2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+                img#sevenEleven2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -382,23 +382,23 @@ html
               p 時間：２４時間　電話75-2291
           tr.slide
             td.pic(colspan='9')
-              img#familyMart2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
-              img#familyMart2_target(alt='ここに写真が表示されます')
-              img#familyMart2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sevenEleven2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sevenEleven2_target(alt='ここに写真が表示されます')
+              img#sevenEleven2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
-                  ul#familyMart2_thumbnails.subnav
+                  ul#sevenEleven2_thumbnails.subnav
       // ザ・ビック
-      table#big.hidden
+      table#tsuruha.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
               p
                 img(src='icon/info.png', alt='ザ、ビックです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。シャワートイレあります。')
                 | ザ・ビック
-                img#bigBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+                img#tsuruhaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking.png', width='30', height='30')
@@ -430,23 +430,119 @@ html
               p 時間：８：００〜２２：００　電話86-5633
           tr.slide
             td.pic(colspan='9')
-              img#bigPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
-              img#big_target(alt='ここに写真が表示されます')
-              img#bigNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#tsuruhaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#tsuruha_target(alt='ここに写真が表示されます')
+              img#tsuruhaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
-                  ul#big_thumbnails.subnav
-      // 
-      table#familyMart2.hidden
+                  ul#tsuruha_thumbnails.subnav
+      // ツルハドラッグ
+      table#tsuruha.hidden
         tbody
           tr.pointTittle
             th(colspan='9')
               p
-                img(src='icon/info.png', alt='です。トイレに近いのは、不明です。シャワートイレあります。')
-                | 
-                img#familyMart2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+                img(src='icon/info.png', alt='ツルハドラッグです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。シャワートイレあります。')
+                | ツルハドラッグ
+                img#tsuruhaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：００〜２２：００　電話86-6268
+          tr.slide
+            td.pic(colspan='9')
+              img#tsuruhaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#tsuruha_target(alt='ここに写真が表示されます')
+              img#tsuruhaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#tsuruha_thumbnails.subnav
+      // ファミリーマート
+      table#familyMart.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ファミリーマートです。トイレに近いのは、不明です。シャワートイレあります。')
+                | ファミリーマート
+                img#familyMartBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：２４時間　電話86-6811
+          tr.slide
+            td.pic(colspan='9')
+              img#familyMartPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#familyMart_target(alt='ここに写真が表示されます')
+              img#familyMartNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#familyMart_thumbnails.subnav
+      // セブンイレブン
+      table#sevenEleven2.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='セブンイレブンです。トイレに近いのは、不明です。シャワートイレあります。')
+                | セブンイレブン
+                img#sevenEleven2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
           tr.infomation
             td.icon
               img(src='icon/parking_ng.png', width='30', height='30')
@@ -478,15 +574,15 @@ html
               p 時間：２４時間　電話73-3937
           tr.slide
             td.pic(colspan='9')
-              img#familyMart2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
-              img#familyMart2_target(alt='ここに写真が表示されます')
-              img#familyMart2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sevenEleven2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#sevenEleven2_target(alt='ここに写真が表示されます')
+              img#sevenEleven2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
           tr.pointData
             td(colspan='9')
               .under
                 nav
-                  ul#familyMart2_thumbnails.subnav
-      // ファミリーマート
+                  ul#sevenEleven2_thumbnails.subnav
+      // ファミリーマート2
       table#familyMart.hidden
         tbody
           tr.pointTittle
@@ -534,7 +630,115 @@ html
               .under
                 nav
                   ul#familyMart_thumbnails.subnav
-
+      // 中央公園（野球場）
+      table#park1.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='中央公園の野球場です。トイレに近いのは、不明です。オストメイトあります。呼び出しボタンあります。シャワートイレあります。')
+                | 中央公園（野球場）
+                img#park1Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 
+          tr.slide
+            td.pic(colspan='9')
+              img#park1Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#park1_target(alt='ここに写真が表示されます')
+              img#park1Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#park1_thumbnails.subnav
+      // 中央公園（外）
+      table#park2.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='中央公園外のトイレです。')
+                | 中央公園（外）
+                img#park2Back(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p
+          tr.slide
+            td.pic(colspan='9')
+              img#park2Prev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#park2_target(alt='ここに写真が表示されます')
+              img#park2Next(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#park2_thumbnails.subnav
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/kanan.js')
+    script(src='js/kanan/sougou.js')
+    script(src='js/kanan/hukushi.js')
+    script(src='js/kanan/kananHall.js')
+    script(src='js/kanan/library.js')
+    script(src='js/kanan/display.js')
+    script(src='js/kanan/sevenEleven.js')
+    script(src='js/kanan/big.js')
+    script(src='js/kanan/tsuruha.js')
+    script(src='js/kanan/familyMart.js')
+    script(src='js/kanan/sevenEleven2.js')
+    script(src='js/kanan/familyMart2.js')
+    script(src='js/kanan/park1.js')
+    script(src='js/kanan/park2.js')
