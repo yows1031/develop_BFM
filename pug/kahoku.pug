@@ -12,101 +12,339 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
+          .menuBorder
+            img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           ul
-            li.button.is-info.is-outlined
+            li.btn_LowSon.button.is-info.is-outlined
               p ローソン
-            li.button.is-info.is-outlined
-              p 道の駅　上品の郷
-            li.button.is-info.is-outlined
-              p.fontSmall 石巻河北総合センター
-            li.button.is-info.is-outlined
+            li.btn_Jouhin.button.is-info.is-outlined
+              p 道の駅上品の郷
+            li.btn_Center.button.is-info.is-outlined
+              p.fontSmall 石巻河北総合      センター
+            li.btn_Ujie.button.is-info.is-outlined
               p ウジエスーパー
-            li.button.is-info.is-outlined
-              p.fontSmall 河北アゼリアプラザ
-            li.button.is-info.is-outlined
+            li.btn_Azeria.button.is-info.is-outlined
+              p.fontSmall 河北アゼリア      プラザ
+            li.btn_Tsuruha.button.is-info.is-outlined
               p ツルハドラッグ
         // 地図メニュー
         .map
-          .button.is-info.icon_lowSon
+          .infomationBorder
+            img(src='icon/border.png' alt='河北地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
+          .btn_LowSon.button.is-info.icon_lowSon
             p ローソン
-          .button.is-info.icon_johin
-            p.fontSmall
-              | 道の駅
-              br
-              | 上品の郷
-          .button.is-info.icon_center
-            p.fontSmall
-              | 石巻河北
-              br
-              | 総合センター
-          .button.is-info.icon_ujie
-            p
-              | ウジエ
-              br
-              | スーパー
-          .button.is-info.icon_azeria
-            p.fontSmall
-              | 河北アゼリア
-              br
-              | プラザ
-          .button.is-info.icon_turuha
-            p
-              | ツルハ
-              br
-              | ドラッグ
+          .btn_Jouhin.button.is-info.icon_johin
+            p.fontSmall 道の駅上品の郷
+          .btn_Center.button.is-info.icon_center
+            p.fontSmall 石巻河北総合センター
+          .btn_Ujie.button.is-info.icon_ujie
+            p ウジエスーパー
+          .btn_Azeria.button.is-info.icon_azeria
+            p.fontSmall 河北アゼリアプラザ
+          .btn_Tsuruha.button.is-info.icon_turuha
+            p ツルハ  ドラッグ
           
           
-    //-   // マスク
-    //-   #mask.hidden
-    //-   // 市役所
-    //-   table#cityHall.hidden
-    //-     tbody
-    //-       tr.pointTittle
-    //-         th(colspan='9')
-    //-           p 石巻市役所
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/parking.png', width='30', height='30')
-    //-         td.text 専用駐車場
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/babybed_ng.png', width='30', height='30')
-    //-         td.text ベビーベッド
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
-    //-         td.text マルチシート
-    //-         td.sign なし
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
-    //-         td.text オストメイト
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/button.png', width='30', height='30')
-    //-         td.text 呼び出しボタン
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
-    //-         td.text シャワートイレ
-    //-         td.sing なし
-    //-       tr.slide
-    //-         td.pic(colspan='9')
-    //-           i#cityHallprev.fas.fa-chevron-circle-left
-    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-    //-           i#cityHallnext.fas.fa-chevron-circle-right
-    //-       tr.pointData
-    //-         td(colspan='9')
-    //-           .under
-    //-             nav
-    //-               ul#cityhall_thumbnails.subnav
-    //-             #cityHallBack
-    //-               i.fas.fa-caret-square-up
-    //-               i.fas.fa-caret-square-left
+      // マスク
+      #mask.hidden
+      // ローソン
+      table#lowSon.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ローソンです。トイレに近いのは、不明です。シャワートイレあります。')
+                | ローソン
+                img#lowSonBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：２４時間　電話61-1533
+          tr.slide
+            td.pic(colspan='9')
+              img#lowSonPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#lowSon_target(alt='ここに写真が表示されます')
+              img#lowSonNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#lowSon_thumbnails.subnav
+      // 道の駅上品の郷
+      table#johin.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='道の駅上品の郷です。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。マルチシートあります。呼び出しボタンあります。シャワートイレあります。')
+                | 道の駅上品の郷
+                img#johinBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet.png', width='30', height='30')
+            td.text マルチシート
+            td.sign あり
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：２４時間　電話62-3670
+          tr.slide
+            td.pic(colspan='9')
+              img#johinPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#johin_target(alt='ここに写真が表示されます')
+              img#johinNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#johin_thumbnails.subnav
+      // 石巻市河北総合センター
+      table#center.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='石巻市河北総合センター１階です。トイレに近いのは、不明です。専用駐車場があります。オストメイトあります。呼び出しボタンあります。')
+                | 石巻市河北総合センター（１F)
+                img#centerBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate.png', width='30', height='30')
+            td.text オストメイト
+            td.sign あり
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２１：００（月曜休み）　電話62-1120
+          tr.slide
+            td.pic(colspan='9')
+              img#centerPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#center_target(alt='ここに写真が表示されます')
+              img#centerNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#center_thumbnails.subnav
+      // ウジエスーパー
+      table#ujie.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ウジエスーパーです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。呼び出しボタンあります。シャワートイレあります。')
+                | ウジエスーパー
+                img#ujieBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：３０〜２１：００（土日祝休み）　電話62-0048
+          tr.slide
+            td.pic(colspan='9')
+              img#ujiePrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#ujie_target(alt='ここに写真が表示されます')
+              img#ujieNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#ujie_thumbnails.subnav
+      // 河北アゼリアプラザ
+      table#azeria.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='河北アゼリアプラザです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。呼び出しボタンあります。')
+                | 河北アゼリアプラザ
+                img#azeriaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２１：００　電話62-0048
+          tr.slide
+            td.pic(colspan='9')
+              img#azeriaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#azeria_target(alt='ここに写真が表示されます')
+              img#azeriaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#azeria_thumbnails.subnav
+      // ツルハドラッグ
+      table#tsuruha.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ツルハドラッグです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。呼び出しボタンあります。')
+                | ツルハドラッグ
+                img#tsuruhaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２２：００　電話62-8268
+          tr.slide
+            td.pic(colspan='9')
+              img#tsuruhaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#tsuruha_target(alt='ここに写真が表示されます')
+              img#tsuruhaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#tsuruha_thumbnails.subnav
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/kahoku.js')
+    script(src='js/kahoku/lowSon.js')
+    script(src='js/kahoku/johin.js')
+    script(src='js/kahoku/center.js')
+    script(src='js/kahoku/ujie.js')
+    script(src='js/kahoku/azeria.js')
+    script(src='js/kahoku/tsuruha.js')

@@ -17,8 +17,8 @@ $imgDir: "../img/";
     left: 390px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 45px;
+        height: 30px;
         top: 730px;
         left: 70px;
     }
@@ -26,14 +26,14 @@ $imgDir: "../img/";
 }
 
 .icon_johin{
-    width: 70px;
+    width: 100px;
     position: absolute;
     top: 670px;
     left: 500px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 85px;
+        height: 30px;
         top: 720px;
         left: 135px;
     }
@@ -41,14 +41,14 @@ $imgDir: "../img/";
 }
 
 .icon_center {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 400px;
     left: 935px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 70px;
+        height: 35px;
         top: 530px;
         left: 280px;
     }
@@ -56,46 +56,48 @@ $imgDir: "../img/";
 }
 
 .icon_ujie  {
-    width: 70px;
+    width: 65px;
+    height: 45px;
     position: absolute;
     top: 260px;
     left: 990px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
-        top: 455px;
-        left: 305px;
+        width: 70px;
+        height: 30px;
+        top: 452px;
+        left: 270px;
     }
 
 }
 
 .icon_azeria  {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 320px;
     left: 985px;
 
     @include sp {
-        width: 55px;
-        height: 25px;
+        width: 67px;
+        height: 40px;
         top: 485px;
-        left: 305px;
+        left: 265px;
     }
 
 }
 
 .icon_turuha  {
     width: 70px;
+    height: 45px;
     position: absolute;
     top: 270px;
     left: 1070px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 430px;
-        left: 325px;
+        width: 48px;
+        height: 30px;
+        top: 421px;
+        left: 320px;
     }
 
 }
