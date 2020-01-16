@@ -21,7 +21,7 @@ html
           ul
             li.btn_Genki.button.is-info.is-outlined
               p 元気の湯
-            li.btn_Nishimatsu.button.is-info.is-outlined
+            li.btn_Nishimatsuya.button.is-info.is-outlined
               p 西松屋
             li.btn_Daiso.button.is-info.is-outlined
               p ダイソー
@@ -56,14 +56,14 @@ html
             li.btn_Wing.button.is-info.is-outlined
               p Ｗｉｎｇ
             li.btn_Hureai.button.is-info.is-outlined
-              p 上釜ふれあい広場
+              p 上釜ふれあい　広場
         // 地図メニュー
         .map
           .infomationBorder
             img(src='icon/border.png' alt='釜地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
           .btn_Genki.button.is-info.icon_genki
             p 元気の湯
-          .btn_Nishimatsu.button.is-info.icon_nishimatsuya
+          .btn_Nishimatsuya.button.is-info.icon_nishimatsuya
             p 西松屋
           .btn_Daiso.button.is-info.icon_daiso
             p ダイソー
@@ -101,7 +101,7 @@ html
           .btn_Kenmin.button.is-info.icon_kenmin
             p.fontSmall
               | 宮城県民共済
-          .btn_LowSoon.button.is-info.icon_lowSon
+          .btn_LowSon.button.is-info.icon_lowSon
             p ローソン
           .btn_Wing.button.is-info.icon_wing
             p Ｗｉｎｇ
@@ -110,6 +110,678 @@ html
               | 上釜ふれあい広場
       // マスク
       #mask.hidden
+      // 元気の湯
+      table#genki.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='元気の湯です。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。呼び出しボタンあります。シャワートイレあります。')
+                | 元気の湯
+                img#genkiBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２４：００　電話92-5226
+          tr.slide
+            td.pic(colspan='9')
+              img#genkiPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#genki_target(alt='ここに写真が表示されます')
+              img#genkiNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#genki_thumbnails.subnav
+      // 西松屋
+      table#nishimatsuya.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='西松屋です。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。呼び出しボタンあります。')
+                | 西松屋
+                img#nishimatsuyaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜２０：００　電話93-5126
+          tr.slide
+            td.pic(colspan='9')
+              img#nishimatsuyaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#nishimatsuya_target(alt='ここに写真が表示されます')
+              img#nishimatsuyaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#nishimatsuya_thumbnails.subnav
+      // ダイソー
+      table#daiso.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ダイソーです。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | ダイソー
+                img#daisoBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜２０：００　電話21-8470
+          tr.slide
+            td.pic(colspan='9')
+              img#daisoPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#daiso_target(alt='ここに写真が表示されます')
+              img#daisoNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#daiso_thumbnails.subnav
+      // あいのや
+      table#ainoya.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='あいのやです。トイレに近いのは、不明です。ベビーベッドあります。シャワートイレあります。')
+                | あいのや
+                img#ainoyaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜１９：００　電話95-9390
+          tr.slide
+            td.pic(colspan='9')
+              img#ainoyaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#ainoya_target(alt='ここに写真が表示されます')
+              img#ainoyaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#ainoya_thumbnails.subnav
+      // ミニストップ
+      table#miniStop.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ミニストップです。トイレに近いのは、不明です。呼び出しボタンあります。シャワートイレあります。')
+                | ミニストップ
+                img#miniStopBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：24時間　電話93-5321
+          tr.slide
+            td.pic(colspan='9')
+              img#miniStopPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#miniStop_target(alt='ここに写真が表示されます')
+              img#miniStopNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#miniStop_thumbnails.subnav
+      // 大将軍
+      table#daisyougun.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='大将軍です。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | 大将軍
+                img#daisyougunBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：００〜２３：３０　電話22-7777
+          tr.slide
+            td.pic(colspan='9')
+              img#daisyougunPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#daisyougun_target(alt='ここに写真が表示されます')
+              img#daisyougunNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#daisyougun_thumbnails.subnav
+      // カラオケ歌姫
+      table#utahime.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='カラオケ歌姫です。トイレに近いのは、不明です。専用駐車場があります。シャワートイレあります。')
+                | カラオケ歌姫
+                img#utahimeBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１１：００〜３：００　電話25-5633
+          tr.slide
+            td.pic(colspan='9')
+              img#utahimePrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#utahime_target(alt='ここに写真が表示されます')
+              img#utahimeNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#utahime_thumbnails.subnav
+      // ルートイン
+      table#rutein.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ルートインです。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | ルートイン
+                img#ruteinBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 電話050-5847-7551
+          tr.slide
+            td.pic(colspan='9')
+              img#ruteinPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#rutein_target(alt='ここに写真が表示されます')
+              img#ruteinNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#rutein_thumbnails.subnav
+      // セイムス
+      table#seims.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='セイムスです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。シャワートイレあります。')
+                | セイムス
+                img#seimsBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜２４：４５　電話25-6560
+          tr.slide
+            td.pic(colspan='9')
+              img#seimsPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#seims_target(alt='ここに写真が表示されます')
+              img#seimsNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#seims_thumbnails.subnav
+      // 吉野屋
+      table#yoshinoya.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='吉野屋です。トイレに近いのは、不明です。シャワートイレあります。')
+                | 吉野屋
+                img#yoshinoyaBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign nasi
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：24時間　電話25-7789
+          tr.slide
+            td.pic(colspan='9')
+              img#yoshinoyaPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#yoshinoya_target(alt='ここに写真が表示されます')
+              img#yoshinoyaNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#yoshinoya_thumbnails.subnav
+      // auショップ
+      table#au.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='auショップです。トイレに近いのは、不明です。専用駐車場があります。シャワートイレあります。')
+                | auショップ
+                img#auBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜１９：００　電話0800-700-2049
+          tr.slide
+            td.pic(colspan='9')
+              img#auPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#au_target(alt='ここに写真が表示されます')
+              img#auNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#au_thumbnails.subnav
+      // ドコモショップ
+      table#docomo.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ドコモショップです。トイレに近いのは、不明です。専用駐車場があります。ベビーベッドあります。シャワートイレあります。')
+                | ドコモショップ
+                img#docomoBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜１９：００　電話95-6667
+          tr.slide
+            td.pic(colspan='9')
+              img#docomoPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#docomo_target(alt='ここに写真が表示されます')
+              img#docomoNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#docomo_thumbnails.subnav
+      // マルハン
+      table#maruhan.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='マルハンです。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | マルハン
+                img#maruhanBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：００〜２３：４５　電話92-6777
+          tr.slide
+            td.pic(colspan='9')
+              img#maruhanPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#maruhan_target(alt='ここに写真が表示されます')
+              img#maruhanNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#maruhan_thumbnails.subnav
+      // ソフトバンク
+      table#softBank.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ソフトバンクです。トイレに近いのは、不明です。呼び出しボタンあります。シャワートイレあります。')
+                | ソフトバンク
+                img#softBankBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：１０：００〜１９：００　電話94-8506
+          tr.slide
+            td.pic(colspan='9')
+              img#softBankPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#softBank_target(alt='ここに写真が表示されます')
+              img#softBankNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#softBank_thumbnails.subnav
       // ヨークベニマル
       table#york.hidden
         tbody
@@ -158,10 +830,216 @@ html
               .under
                 nav
                   ul#york_thumbnails.subnav
-    
+      // 宮城県民共済
+      table#kenmin.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='宮城県民共済です。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | 宮城県民共済
+                img#kenminBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：９：００〜１７：３０　電話93-4188
+          tr.slide
+            td.pic(colspan='9')
+              img#kenminPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#kenmin_target(alt='ここに写真が表示されます')
+              img#kenminNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#kenmin_thumbnails.subnav
+      // ローソン
+      table#lowSon.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ローソンです。トイレに近いのは、不明です。専用駐車場があります。シャワートイレあります。')
+                | ローソン
+                img#lowSonBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：24時間　電話98-5228
+          tr.slide
+            td.pic(colspan='9')
+              img#lowSonPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#lowSon_target(alt='ここに写真が表示されます')
+              img#lowSonNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#lowSon_thumbnails.subnav
+      // Wing
+      table#wing.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='ウイングです。トイレに近いのは、不明です。専用駐車場があります。呼び出しボタンあります。シャワートイレあります。')
+                | Wing
+                img#wingBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign あり
+            td.icon
+              img(src='icon/babybed_ng.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign なし
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign あり
+            td.icon
+              img(src='icon/showertoilet.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing あり
+          tr.time
+            td(colspan='9')
+              p 時間：８：００〜２３：４５　電話94-5775
+          tr.slide
+            td.pic(colspan='9')
+              img#wingPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#wing_target(alt='ここに写真が表示されます')
+              img#wingNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#wing_thumbnails.subnav
+      // 上釜ふれあい市場
+      table#hureai.hidden
+        tbody
+          tr.pointTittle
+            th(colspan='9')
+              p
+                img(src='icon/info.png', alt='上釜ふれあい市場です。トイレに近いのは、不明です。ベビーベッドあります。')
+                | 上釜ふれあい市場
+                img#hureaiBack(src='icon/back.png', a_lt='このボタンで地図に戻ります')
+          tr.infomation
+            td.icon
+              img(src='icon/parking_ng.png', width='30', height='30')
+            td.text 専用駐車場
+            td.sign なし
+            td.icon
+              img(src='icon/babybed.png', width='30', height='30')
+            td.text ベビーベッド
+            td.sign あり
+            td.icon
+              img(src='icon/multisheet_ng.png', width='30', height='30')
+            td.text マルチシート
+            td.sign なし
+          tr.infomation
+            td.icon
+              img(src='icon/ostomate_ng.png', width='30', height='30')
+            td.text オストメイト
+            td.sign なし
+            td.icon
+              img(src='icon/button_ng.png', width='30', height='30')
+            td.text 呼び出しボタン
+            td.sign なし
+            td.icon
+              img(src='icon/showertoilet_ng.png', width='30', height='30')
+            td.text シャワートイレ
+            td.sing なし
+          tr.time
+            td(colspan='9')
+              p 時間：８：３０〜１６：００
+          tr.slide
+            td.pic(colspan='9')
+              img#hureaiPrev(src='icon/left.png', alt='スライドショーのボタンです。上に詳細情報があります')
+              img#hureai_target(alt='ここに写真が表示されます')
+              img#hureaiNext(src='icon/right.png', alt='スライドショーのボタンです。上に詳細情報があります')
+          tr.pointData
+            td(colspan='9')
+              .under
+                nav
+                  ul#hureai_thumbnails.subnav
     include include/footer.pug
     script(src='js/kama.js')
+    script(src='js/kama/genki.js')
+    script(src='js/kama/nishimatsuya.js')
+    script(src='js/kama/daiso.js')
+    script(src='js/kama/ainoya.js')
+    script(src='js/kama/miniStop.js')
+    script(src='js/kama/daisyogun.js')
+    script(src='js/kama/utahime.js')
+    script(src='js/kama/rutein.js')
+    script(src='js/kama/seims.js')
+    script(src='js/kama/yoshinoya.js')
+    script(src='js/kama/au.js')
+    script(src='js/kama/docomo.js')
+    script(src='js/kama/maruhan.js')
+    script(src='js/kama/softBank.js')
     script(src='js/kama/york.js')
-    //- script(src='js/ogatsu_Hagihama/ogatsuHospital.js')
-    //- script(src='js/ogatsu_Hagihama/ogatsuJouhou.js')
-    //- script(src='js/ogatsu_Hagihama/ogatsuVilege.js')
+    script(src='js/kama/kenmin.js')
+    script(src='js/kama/lowSon.js')
+    script(src='js/kama/wing.js')
+    script(src='js/kama/hureai.js')

@@ -17,8 +17,8 @@ $imgDir: "../img/";
     left: 1070px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 42px;
+        height: 30px;
         top: 520px;
         left: 325px;
     }
@@ -33,23 +33,23 @@ $imgDir: "../img/";
 
     @include sp {
         width: 30px;
-        height: 20px;
+        height: 30px;
         top: 570px;
         left: 335px;
     }
 }
 
 .icon_daiso {
-    width: 60px;
+    width: 65px;
     position: absolute;
     top: 560px;
-    left: 1085px;
+    left: 1080px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 655px;
-        left: 330px;
+        width: 32px;
+        height: 30px;
+        top: 570px;
+        left: 338px;
     }
 }
 
@@ -60,10 +60,10 @@ $imgDir: "../img/";
     left: 960px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 42px;
+        height: 30px;
         top: 540px;
-        left: 285px;
+        left: 276px;
     }
 }
 
@@ -74,18 +74,10 @@ $imgDir: "../img/";
     left: 960px;
 
     @include sp {
-        width: 60px;
-        height: 25px;
+        width: 32px;
+        height: 30px;
         top: 590px;
-        left: 300px;
-    }
-
-    .spMode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
+        left: 306px;
     }
 }
 
@@ -97,23 +89,23 @@ $imgDir: "../img/";
 
     @include sp {
         width: 40px;
-        height: 25px;
-        top: 680px;
-        left: 305px;
+        height: 30px;
+        top: 654px;
+        left: 297px;
     }
 }
 
 .icon_utahime {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 540px;
-    left: 990px;
+    left: 965px;
 
     @include sp {
-        width: 65px;
-        height: 25px;
-        top: 630px;
-        left: 290px;
+        width: 45px;
+        height: 30px;
+        top: 623px;
+        left: 296px;
     }
 }
 
@@ -124,18 +116,10 @@ $imgDir: "../img/";
     left: 830px;
 
     @include sp {
-        width: 55px;
-        height: 25px;
-        top: 590px;
-        left: 244px;
-    }
-
-    .spMode {
-        display: none;
-
-        @include sp {
-            display: block;
-        }
+        width: 44px;
+        height: 30px;
+        top: 580px;
+        left: 261px;
     }
 }
 
@@ -146,10 +130,10 @@ $imgDir: "../img/";
     left: 755px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 42px;
+        height: 30px;
         top: 560px;
-        left: 217px;
+        left: 219px;
     }
 }
 
@@ -160,38 +144,38 @@ $imgDir: "../img/";
     left: 680px;
 
     @include sp {
-        width: 30px;
-        height: 25px;
-        top: 575px;
-        left: 185px;
+        width: 35px;
+        height: 30px;
+        top: 572px;
+        left: 183px;
     }
 }
 
 .icon_au {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 520px;
     left: 730px;
 
     @include sp {
-        width: 65px;
-        height: 25px;
-        top: 630px;
-        left: 210px;
+        width: 66px;
+        height: 30px;
+        top: 613px;
+        left: 214px;
     }
 }
 
 .icon_docomo {
-    width: 90px;
+    width: 95px;
     position: absolute;
     top: 515px;
     left: 600px;
 
     @include sp {
-        width: 70px;
-        height: 25px;
+        width: 44px;
+        height: 30px;
         top: 605px;
-        left: 150px;
+        left: 165px;
     }
 }
 
@@ -202,38 +186,38 @@ $imgDir: "../img/";
     left: 540px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 45px;
+        height: 30px;
         top: 640px;
         left: 145px;
     }
 }
 
 .icon_softbank {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 490px;
-    left: 390px;
+    left: 425px;
 
     @include sp {
-        width: 65px;
-        height: 25px;
-        top: 600px;
+        width: 44px;
+        height: 30px;
+        top: 592px;
         left: 81px;
     }
 }
 
 .icon_york {
-    width: 90px;
+    width: 100px;
     position: absolute;
     top: 530px;
     left: 370px;
 
     @include sp {
-        width: 73px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
         top: 626px;
-        left: 70px;
+        left: 53px;
     }
 }
 
@@ -244,8 +228,8 @@ $imgDir: "../img/";
     left: 300px;
 
     @include sp {
-        width: 65px;
-        height: 25px;
+        width: 55px;
+        height: 30px;
         top: 560px;
         left: 50px;
     }
@@ -258,8 +242,8 @@ $imgDir: "../img/";
     left: 225px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 43px;
+        height: 30px;
         top: 560px;
         left: 5px;
     }
@@ -272,22 +256,22 @@ $imgDir: "../img/";
     left: 185px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 43px;
+        height: 30px;
         top: 610px;
         left: 5px;
     }
 }
 
 .icon_hureai {
-    width: 80px;
+    width: 85px;
     position: absolute;
     top: 765px;
     left: 200px;
 
     @include sp {
-        width: 80px;
-        height: 25px;
+        width: 85px;
+        height: 30px;
         top: 785px;
         left: 15px;
     }

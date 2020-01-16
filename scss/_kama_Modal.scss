@@ -6,6 +6,1265 @@ $imgDir: "../img/";
   }
 }
 
+#genki {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #genkiPrev, #genkiNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #genkiPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #genkiNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #genki_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #genkiBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #genkiBack:hover {
+        opacity: 1;
+    }
+}
+
+#genki.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#nishimatsuya {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #nishimatsuyaPrev, #nishimatsuyaNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #nishimatsuyaPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #nishimatsuyaNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #nishimatsuya_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #nishimatsuyaBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #nishimatsuyaBack:hover {
+        opacity: 1;
+    }
+}
+
+#nishimatsuya.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#daiso {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #daisoPrev, #daisoNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #daisoPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #daisoNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #daiso_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #daisoBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #daisoBack:hover {
+        opacity: 1;
+    }
+}
+
+#daiso.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#ainoya {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #ainoyaPrev, #ainoyaNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #ainoyaPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #ainoyaNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #ainoya_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #ainoyaBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #ainoyaBack:hover {
+        opacity: 1;
+    }
+}
+
+#ainoya.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#miniStop {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #miniStopPrev, #miniStopNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #miniStopPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #miniStopNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #miniStop_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #miniStopBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #miniStopBack:hover {
+        opacity: 1;
+    }
+}
+
+#miniStop.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+#daisyougun {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #daisyougunPrev, #daisyougunNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #daisyougunPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #daisyougunNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #daisyougun_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #daisyougunBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #daisyougunBack:hover {
+        opacity: 1;
+    }
+}
+
+#daisyougun.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#utahime {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #utahimePrev, #utahimeNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #utahimePrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #utahimeNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #utahime_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #utahimeBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #utahimeBack:hover {
+        opacity: 1;
+    }
+}
+
+#utahime.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#rutein {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #ruteinPrev, #ruteinNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #ruteinPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #ruteinNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #rutein_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #ruteinBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #ruteinBack:hover {
+        opacity: 1;
+    }
+}
+
+#rutein.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#seims {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #seimsPrev, #seimsNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #seimsPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #seimsNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #seims_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #seimsBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #seimsBack:hover {
+        opacity: 1;
+    }
+}
+
+#seims.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#yoshinoya {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #yoshinoyaPrev, #yoshinoyaNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #yoshinoyaPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #yoshinoyaNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #yoshinoya_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #yoshinoyaBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #yoshinoyaBack:hover {
+        opacity: 1;
+    }
+}
+
+#yoshinoya.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#au {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #auPrev, #auNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #auPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #auNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #au_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #auBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #auBack:hover {
+        opacity: 1;
+    }
+}
+
+#au.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#docomo {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #docomoPrev, #docomoNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #docomoPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #docomoNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #docomo_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #docomoBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #docomoBack:hover {
+        opacity: 1;
+    }
+}
+
+#docomo.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#maruhan {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #maruhanPrev, #maruhanNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #maruhanPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #maruhanNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #maruhan_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #maruhanBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #maruhanBack:hover {
+        opacity: 1;
+    }
+}
+
+#maruhan.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#softBank {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #softBankPrev, #softBankNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #softBankPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #softBankNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #softBank_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #softBankBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #softBankBack:hover {
+        opacity: 1;
+    }
+}
+
+#softBank.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
 #york {
     background: white;
     position: absolute;
@@ -85,6 +1344,366 @@ $imgDir: "../img/";
 }
 
 #york.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#kenmin {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #kenminPrev, #kenminNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #kenminPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #kenminNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #kenmin_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #kenminBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #kenminBack:hover {
+        opacity: 1;
+    }
+}
+
+#kenmin.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#lowSon {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #lowSonPrev, #lowSonNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #lowSonPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #lowSonNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #lowSon_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #lowSonBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #lowSonBack:hover {
+        opacity: 1;
+    }
+}
+
+#lowSon.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#wing {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #wingPrev, #wingNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #wingPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #wingNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #wing_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #wingBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #wingBack:hover {
+        opacity: 1;
+    }
+}
+
+#wing.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+#hureai {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+
+        .pointTittle P {
+            font-size: 12pt;
+        }
+    }
+
+    #hureaiPrev, #hureaiNext {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #hureaiPrev {
+        left: 60px;
+
+        @include  sp {
+            width: 60px;
+            left: 10px;
+        }
+    }
+    #hureaiNext {
+        right: 60px;
+
+        @include sp {
+            width: 60px;
+            left: 295px;
+        }
+    }
+
+
+    #hureai_target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #hureaiBack {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #hureaiBack:hover {
+        opacity: 1;
+    }
+}
+
+#hureai.hidden {
     transform: translate(0, -850px);
 
     @include sp {
