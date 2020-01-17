@@ -10,17 +10,33 @@ $imgDir: "../img/";
     background-image: url("#{$imgDir}inai.png");
 }
 
-.icon_park {
-    width: 70px;
+.icon_park1 {
+    width: 85px;
+    height: 45px;
     position: absolute;
-    top: 470px;
+    top: 447px;
     left: 430px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 55px;
+        height: 30px;
         top: 580px;
         left: 100px;
+    }
+}
+
+.icon_park2 {
+    width: 75px;
+    height: 45px;
+    position: absolute;
+    top: 500px;
+    left: 370px;
+
+    @include sp {
+        width: 48px;
+        height: 30px;
+        top: 612px;
+        left: 87px;
     }
 }
 
@@ -31,36 +47,36 @@ $imgDir: "../img/";
     left: 335px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 45px;
+        height: 30px;
         top: 558px;
         left: 35px;
     }
 }
 
 .icon_miniStop {
-    width: 70px;
+    width: 85px;
     position: absolute;
     top: 480px;
-    left: 260px;
+    left: 249px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
-        top: 585px;
+        width: 65px;
+        height: 30px;
+        top: 589px;
         left: 20px;
     }
 }
 
 .icon_garden {
-    width: 70px;
+    width: 67px;
     position: absolute;
     top: 400px;
     left: 380px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 50px;
+        height: 30px;
         top: 530px;
         left: 70px;
     }
@@ -73,22 +89,22 @@ $imgDir: "../img/";
     left: 380px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 45px;
+        height: 30px;
         top: 475px;
         left: 65px;
     }
 }
 
 .icon_sougou {
-    width: 70px;
+    width: 68px;
     position: absolute;
     top: 665px;
     left: 930px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 52px;
+        height: 30px;
         top: 715px;
         left: 297px;
     }
@@ -101,10 +117,10 @@ $imgDir: "../img/";
     left: 858px;
 
     @include sp {
-        width: 40px;
-        height: 25px;
+        width: 56px;
+        height: 30px;
         top: 720px;
-        left: 255px;
+        left: 236px;
     }
 }
 
@@ -115,22 +131,22 @@ $imgDir: "../img/";
     left: 810px;
 
     @include sp {
-        width: 50px;
-        height: 25px;
+        width: 60px;
+        height: 30px;
         top: 780px;
         left: 250px;
     }
 }
 
 .icon_raiful {
-    width: 70px;
+    width: 67px;
     position: absolute;
     top: 285px;
     left: 965px;
 
     @include sp {
         width: 50px;
-        height: 25px;
+        height: 30px;
         top: 440px;
         left: 300px;
     }

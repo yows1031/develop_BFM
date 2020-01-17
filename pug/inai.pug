@@ -12,116 +12,69 @@ html
     include include/header.pug
     main
       .spMenu
-        i#spMenu.fas.fa-bars
+        //- i#spMenu.fas.fa-bars
+        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
         // サイドメニュー
         #menu.hidden
           ul
-            li.button.is-info.is-outlined
-              p 運動公園
-            li.button.is-info.is-outlined
+            li.btn_Park1.button.is-info.is-outlined
+              p 運動公園　　　（野球場）
+            li.btn_Park2.button.is-info.is-outlined
+              p 運動公園（外）
+            li.btn_LowSon1.button.is-info.is-outlined
               p ローソン
-            li.button.is-info.is-outlined
+            li.btn_MiniStop.button.is-info.is-outlined
               p ミニストップ
-            li.button.is-info.is-outlined
-              p アンジュガーデン
-            li.button.is-info.is-outlined
+            li.btn_Garden.button.is-info.is-outlined
+              p アンジュ　　　ガーデン
+            li.btn_LowSon2.button.is-info.is-outlined
               p ローソン
-            li.button.is-info.is-outlined
+            li.btn_Sougou.button.is-info.is-outlined
               p 稲井総合支所
-            li.button.is-info.is-outlined
+            li.btn_Center.button.is-info.is-outlined
               p 稲井公民館
-            li.button.is-info.is-outlined
-              p ファミリーマート
-            li.button.is-info.is-outlined
+            li.btn_FamilyMart.button.is-info.is-outlined
+              p ファミリー　　マート
+            li.btn_Raiful.button.is-info.is-outlined
               p ライフル射撃場
         // 地図メニュー
         .map
-          .button.is-info.icon_park
-            p 運動公園
-          .button.is-info.icon_lowSon1
+          .infomationBorder
+            img(src='icon/border.png' alt='稲井地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
+          .btn_Park1.button.is-info.icon_park1
+            p 運動公園（野球場）
+          .btn_Park2.button.is-info.icon_park2
+            p 運動公園（外）
+          .btn_LowSon1.button.is-info.icon_lowSon1
             p ローソン
-          .button.is-info.icon_miniStop
-            p.fontSmall
-               | ミニ
-               br
-               | ストップ
-          .button.is-info.icon_garden
-            p.fontSmall
-               | アンジュ
-               br
-               | ガーデン
-          .button.is-info.icon_lowSon2
+          .btn_MiniStop.button.is-info.icon_miniStop
+            p.fontSmall ミニストップ
+          .btn_Garden.button.is-info.icon_garden
+            p.fontSmall アンジュガーデン
+          .btn_LowSon2.button.is-info.icon_lowSon2
             p ローソン
-          .button.is-info.icon_sougou
-            p.fontSmall
-               | 稲井
-               br
-               | 総合支所
-          .button.is-info.icon_center
-            p.fontSmall
-               | 稲井
-               br
-               | 公民館
-          .button.is-info.icon_familiMart
-            p.fontSmall
-               | ファミリー
-               br
-               | マート
-          .button.is-info.icon_raiful
-            p.fontSmall
-               | ライフル
-               br
-               | 射撃場
+          .btn_Sougou.button.is-info.icon_sougou
+            p.fontSmall 稲井総合支所
+          .btn_Center.button.is-info.icon_center
+            p.fontSmall 稲井公民館
+          .btn_FamilyMart.button.is-info.icon_familiMart
+            p.fontSmall ファミリーマート
+          .btn_Riful.button.is-info.icon_raiful
+            p.fontSmall ライフル射撃場
           
           
     //-   // マスク
     //-   #mask.hidden
-    //-   // 市役所
-    //-   table#cityHall.hidden
-    //-     tbody
-    //-       tr.pointTittle
-    //-         th(colspan='9')
-    //-           p 石巻市役所
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/parking.png', width='30', height='30')
-    //-         td.text 専用駐車場
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/babybed_ng.png', width='30', height='30')
-    //-         td.text ベビーベッド
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/multisheet_ng.png', width='30', height='30')
-    //-         td.text マルチシート
-    //-         td.sign なし
-    //-       tr.infomation
-    //-         td.icon
-    //-           img(src='icon/ostomate_ng.png', width='30', height='30')
-    //-         td.text オストメイト
-    //-         td.sign なし
-    //-         td.icon
-    //-           img(src='icon/button.png', width='30', height='30')
-    //-         td.text 呼び出しボタン
-    //-         td.sign あり
-    //-         td.icon
-    //-           img(src='icon/showertoilet_ng.png', width='30', height='30')
-    //-         td.text シャワートイレ
-    //-         td.sing なし
-    //-       tr.slide
-    //-         td.pic(colspan='9')
-    //-           i#cityHallprev.fas.fa-chevron-circle-left
-    //-           img#cityHall_target(src='img/pic/station/cityhall/cityhall1.jpg')
-    //-           i#cityHallnext.fas.fa-chevron-circle-right
-    //-       tr.pointData
-    //-         td(colspan='9')
-    //-           .under
-    //-             nav
-    //-               ul#cityhall_thumbnails.subnav
-    //-             #cityHallBack
-    //-               i.fas.fa-caret-square-up
-    //-               i.fas.fa-caret-square-left
     include include/footer.pug
     
-    script(src='js/station.js')
+    script(src='js/inai.js')
+    script(src='js/inai/1park.js')
+    script(src='js/inai/2park.js')
+    script(src='js/inai/1lowSon.js')
+    script(src='js/inai/center.js')
+    script(src='js/inai/familyMart.js')
+    script(src='js/inai/garden.js')
+    script(src='js/inai/miniStop.js')
+    script(src='js/inai/raiful.js')
+    script(src='js/inai/sougou.js')
