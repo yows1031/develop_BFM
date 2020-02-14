@@ -6,6 +6,16 @@ $imgDir: "../img/";
   }
 }
 
+.leaflet-popup-content-wrapper {
+    background:skyblue;
+    cursor: pointer;
+    padding: 0;
+}
+
+.leaflet-popup-content-wrapper :hover {
+    background:white;
+}
+
 .infomationBorder {
     position: absolute;
     height: 30px;
@@ -119,6 +129,7 @@ main {
             height: 600px;
             // background-image: url("#{$imgDir}station.png");
             background-size: 980px 600px;
+            z-index: 10;
 
             @include sp {
                 z-index: 10;
@@ -135,10 +146,6 @@ main {
                 }
             }
 
-            p:hover {
-                color: white;
-            }
-
             .fontSmall {
 
                 @include sp {
@@ -153,11 +160,10 @@ main {
                 }
             }
 
-            .button.is-info {
-                border: solid 1px red;
-                border-radius: 3px;
-                white-space: pre-wrap;
-                padding: 0;
+            .popButton {
+                font-size: 16pt;
+                height: 30px;
+                text-align: center;
             }
            
         }
@@ -171,6 +177,7 @@ main {
         height: 600px;
         background-color: white;
         opacity: 0.8;
+        z-index: 20;
 
         @include sp {
             z-index: 30;
@@ -187,7 +194,9 @@ main {
 
     // テーブル基本
 
-    
+    table {
+        z-index: 30;
+    }
 
     .pointTittle {
         height: 40px;

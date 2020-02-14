@@ -7,7 +7,8 @@ html
     title 石巻バリアフリーマップ
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
-    link(rel='stylesheet', href='css/oshika.css')
+    link(rel='stylesheet', href='https://unpkg.com/leaflet@1.6.0/dist/leaflet.css', integrity='sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==', crossorigin='')
+    link(rel='stylesheet', href='css/oshika2.css')
   body.container
     include include/header.pug
     main
@@ -18,48 +19,11 @@ html
         #menu.hidden
           .menuBorder
             img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
-          ul
-            li.btn_Toyo.button.is-info.is-outlined
-              p 東洋館
-            li.btn_sogo.button.is-info.is-outlined
-              p 牡鹿総合支所
-            li.btn_seishin.button.is-info.is-outlined
-              p おしか清心苑
-            li.btn_seiyu1.button.is-info.is-outlined
-              p 清優館①
-            li.btn_seiyu2.button.is-info.is-outlined
-              p 清優館②
-            li.btn_maru1.button.is-info.is-outlined
-              p.fontSmall
-               | 牡鹿交流センター ほっとまる①
-            li.btn_maru2.button.is-info.is-outlined
-              p.fontSmall
-               | 牡鹿交流センター ほっとまる②
-            li.btn_yoriiso.button.is-info.is-outlined
-              p 寄磯診療所
+          ul#ul
         // 地図メニュー
-        .map
+        .map#map
           .infomationBorder
             img(src='icon/border.png' alt='牡鹿地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
-          .btn_Toyo.button.is-info.icon_toyo
-            p 東洋館
-          .btn_sogo.button.is-info.icon_sougou
-            p.fontSmall
-              | 牡鹿総合支所
-          .btn_seishin.button.is-info.icon_seishin
-            p.fontSmall おしか清心苑
-          .btn_seiyu1.button.is-info.icon_seiyu1
-            p 清優館①
-          .btn_seiyu2.button.is-info.icon_seiyu2
-            p 清優館②
-          .btn_maru1.button.is-info.icon_hot_Maru1
-            p.fontSmall2
-              | 牡鹿交流センターほっとまる①
-          .btn_maru2.button.is-info.icon_hot_Maru2
-            p.fontSmall2
-              | 牡鹿交流センターほっとまる②
-          .btn_yoriiso.button.is-info.icon_yoriiso
-            p 寄磯診療所
           
           
       // マスク
@@ -452,6 +416,9 @@ html
       
     include include/footer.pug
     
+    script(src='https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', integrity='sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==', crossorigin='')
+    script(src='https://code.jquery.com/jquery-3.3.1.js')
+    script(src='js/oshika/oshikaMap.js')
     script(src='js/oshika.js')
     script(src='js/oshika/oshikaToyo.js')
     script(src='js/oshika/oshikaSogo.js')
