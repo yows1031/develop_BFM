@@ -54,7 +54,6 @@ main {
 
     .main {
         height: 600px;
-        display: flex;
 
         @include sp {
             height: 1000px;
@@ -125,17 +124,14 @@ main {
 
 // マップメニュー
         .map {
-            width: 990px;
+            width: 100%;
             height: 600px;
-            // background-image: url("#{$imgDir}station.png");
-            background-size: 980px 600px;
             z-index: 10;
 
             @include sp {
                 z-index: 10;
-                width: 390px;
+                width: 100%;
                 height: 430px;
-                background-size: 380px 430px;
             }
 
             P {
@@ -208,9 +204,7 @@ main {
 
     }
 
-    .time {
-        
-        p {
+    #tdTime {
             font-size: 14pt;
             text-align: center;
 
@@ -218,7 +212,6 @@ main {
                 font-size: 10pt;
             }
         }
-    }
 
     .infomation {
         height: 50px;

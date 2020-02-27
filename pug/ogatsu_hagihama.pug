@@ -7,7 +7,8 @@ html
     title 石巻バリアフリーマップ
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
-    link(rel='stylesheet', href='css/ogatsu_hagihama.css')
+    link(rel='stylesheet', href='https://unpkg.com/leaflet@1.6.0/dist/leaflet.css', integrity='sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==', crossorigin='')
+    link(rel='stylesheet', href='css/ogatsu_hagihama2.css')
   body.container
     include include/header.pug
     main
@@ -20,36 +21,14 @@ html
             img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
           .menuArea
             p 雄勝地区
-          ul
-            li.btn_sougou.button.is-info.is-outlined
-              p 雄勝総合支所
-            li.btn_hospital.button.is-info.is-outlined
-              p 雄勝診療所
-            li.btn_jouhou.button.is-info.is-outlined
-              p.fontSmall 復興まちづくり情報交流館
+          ul#ul
           .menuArea
             p 萩浜地区
-          ul
-            li.btn_vilege.button.is-info.is-outlined
-              p 牡鹿ビレッジ
+          ul#ul2
         // 地図メニュー
-        .map
+        .map#map
           .infomationBorder
             img(src='icon/border.png' alt='雄勝、萩浜地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
-          .icon_ogatsu.Area
-            p 雄勝地区
-          .btn_sougou.button.is-info.icon_sougou
-            p.fontSmall
-              | 雄勝総合支所
-          .btn_hospital.button.is-info.icon_hospital
-            p.fontSmall 雄勝診療所
-          .btn_jouhou.button.is-info.icon_jouhou
-            p.fontSmall
-              | 復興まちづくり情報交流館
-          .icon_hagihama.Area
-            p 萩浜地区
-          .btn_vilege.button.is-info.icon_vilege
-            p.fontSmall 牡鹿ビレッジ
       // マスク
       #mask.hidden
       // 雄勝総合支所
@@ -246,6 +225,9 @@ html
                   ul#vilege_thumbnails.subnav
     include include/footer.pug
     
+    script(src='https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', integrity='sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==', crossorigin='')
+    script(src='https://code.jquery.com/jquery-3.3.1.js')
+    script(src='js/ogatsu_Hagihama/ogatsuHagihamaMap.js')
     script(src='js/ogatsu_Hagihama.js')
     script(src='js/ogatsu_Hagihama/ogatsuSougou.js')
     script(src='js/ogatsu_Hagihama/ogatsuHospital.js')

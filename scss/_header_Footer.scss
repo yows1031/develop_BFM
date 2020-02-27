@@ -60,16 +60,16 @@ header {
     .nav {
         width: 100%;
         font-size: 16px;
-        // justify-content: center;
 
         div {
             width: 120px;
             height: 60px;
-           
+            text-align: center;
+            cursor: pointer;
         }
-
-        .is-active {
-            background: white;
+        
+        div:hover {
+            background-color: white;
         }
 
         a {

@@ -6,6 +6,92 @@ $imgDir: "../img/";
   }
 }
 
+#modal {
+    background: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    transition: .8s;
+
+    @include sp {
+        z-index: 40;
+        top: 390px;
+        left: 5px;
+    }
+
+    #Prev, #Next {
+        position: absolute;  
+        font-size: 60px;
+        opacity: 0.6;
+        top: 110px;
+
+        :hover {
+            opacity: 1.0;
+        }
+
+        @include sp {
+            font-size: 40px;
+            top: 60px;
+        }
+    }
+    #Prev {
+        left: 60px;
+
+        @include  sp {
+            left: 10px;
+            width: 60px;
+        }
+    }
+    #Next {
+        right: 60px;
+
+        @include sp {
+            left: 295px;
+            width: 60px;
+        }
+    }
+
+
+    #target {
+        width: 350px;
+        height: 250px;
+        position: absolute;
+        top: 30px;
+        left: 170px;
+
+        @include sp {
+            width: 200px;
+            height: 150px;
+            top: 20px;
+            left: 75px;
+        }
+    }
+
+    #Back {
+        margin-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        @include sp {
+            width: 70px;
+            height: 30px;
+        }
+    }
+    #Back:hover {
+        opacity: 1;
+    }
+}
+
+#modal.hidden {
+    transform: translate(0, -850px);
+
+    @include sp {
+        transform: translate(-550px, 0);
+    }
+}
+
+
 #toyo {
     background: white;
     position: absolute;
