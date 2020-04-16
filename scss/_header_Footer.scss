@@ -6,19 +6,13 @@ $imgDir: "../img/";
   }
 }
 
-// html,body {
-//     width: 100%;
-// }
 .container{
-    // width: 90%;
-    width: 1140px;
+    width: 960px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: lightblue;
 
     @include sp {
-        // width: 97%;
         width: 364px;
-        
     }
 }
 
@@ -104,13 +98,10 @@ header {
 
 // main
 main {
-    height: 600px;
-    background-image: url("#{$imgDir}main.png");
-    background-size: 1150px 600px;
+    height: 560px;
 
     @include sp {
         height: 465px;
-        background-size: 400px 300px;
     }
 
     .index {

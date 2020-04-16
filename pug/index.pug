@@ -12,18 +12,11 @@ html
   body.container
     include include/header2.pug
     main
-      .spMenu
-        img#spMenu(src='icon/menu.png' alt='メニューボタンです。タップすると各ポイントのボタンが表示されます')
       .main
-        //- // サイドメニュー
-        //- #menu
-        //-   .menuBorder
-        //-     img(src='icon/border.png' alt='メニュー一覧です。下に各ポイントのボタンがあります。')
-        //-   ul#ul
         // 地図メニュー
         .map#map
           .infomationBorder
-            img(src='icon/border.png' alt='牡鹿地区の地図です。下に各ポイントのボタンがあります。上のボタンを押せば、一覧のメニューが見られます。')
+            img(src='icon/border.png' alt='全体の地図です。下に各ポイントのボタンがあります。')
           
           
       // マスク
@@ -72,7 +65,24 @@ html
     script(src='https://code.jquery.com/jquery-3.3.1.js')
     script(src='js/bfmMap.js')
     script(src="js/modalBack.js")
+    script(src='js/station/stationMapPoint.js')
+    script(src='js/station/stationMapModal.js')
+    script(src='js/yamashita/yamashitaMapPoint.js')
+    script(src='js/yamashita/yamashitaMapModal.js')
+    script(src='js/hebitaEast/hebitaEastMapPoint.js')
+    script(src='js/hebitaEast/hebitaEastMapModal.js')
+    script(src='js/hebitaWest/hebitaWestMapPoint.js')
+    script(src='js/hebitaWest/hebitaWestMapModal.js')
+    script(src='js/hebitaSouth/hebitaSouthMapPoint.js')
+    script(src='js/hebitaSouth/hebitaSouthMapModal.js')
+    script(src='js/watanoha/watanohaMapPoint.js')
+    script(src='js/watanoha/watanohaMapModal.js')
+    script(src='js/minato/minatoMapPoint.js')
+    script(src='js/minato/minatoMapModal.js')
+    script(src='js/inai/inaiMapPoint.js')
+    script(src='js/inai/inaiMapModal.js')
     script(src='js/kama/kamaMapPoint.js')
+    script(src='js/kama/kamaMapModal.js')
     script(src='js/kanan/kananMapPoint.js')
     script(src='js/kanan/kananMapModal.js')
     script(src='js/kahoku/kahokuMapPoint.js')

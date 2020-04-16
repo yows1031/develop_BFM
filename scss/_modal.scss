@@ -9,8 +9,8 @@ $imgDir: "../img/";
 #modal {
     background: white;
     position: absolute;
-    top: 210px;
-    left: 220px;
+    top: 200px;
+    left: 130px;
     transition: .8s;
 
     @include sp {

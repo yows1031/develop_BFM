@@ -53,26 +53,26 @@ $imgDir: "../img/";
 main {
 
     .main {
-        height: 600px;
+        height: 560px;
 
         @include sp {
             height: 1000px;
         }
 
-        .fontSmall {
-            font-size: 10pt;
+        // .fontSmall {
+        //     font-size: 10pt;
 
-            @include sp {
-                font-size: 6pt;
-            }
-        }
-        .fontSmall2 {
-            font-size: 7pt;
+        //     @include sp {
+        //         font-size: 6pt;
+        //     }
+        // }
+        // .fontSmall2 {
+        //     font-size: 7pt;
 
-            @include sp {
-                font-size: 5pt;
-            }
-        }
+        //     @include sp {
+        //         font-size: 5pt;
+        //     }
+        // }
 
 // サイドメニュー
         #menu {
@@ -125,36 +125,36 @@ main {
 // マップメニュー
         .map {
             width: 100%;
-            height: 600px;
+            height: 560px;
             z-index: 10;
 
             @include sp {
                 z-index: 10;
                 width: 100%;
-                height: 430px;
+                height: 475px;
             }
 
             P {
                 color: black;
                 
-                @include sp {
-                    font-size: 6pt;
-                }
+                // @include sp {
+                //     font-size: 6pt;
+                // }
             }
 
-            .fontSmall {
+            // .fontSmall {
 
-                @include sp {
-                    font-size: 8pt;
-                }
-            }
+            //     @include sp {
+            //         font-size: 8pt;
+            //     }
+            // }
 
-            .fontSmall2 {
+            // .fontSmall2 {
 
-                @include sp {
-                    font-size: 6pt;
-                }
-            }
+            //     @include sp {
+            //         font-size: 6pt;
+            //     }
+            // }
 
             .popButton {
                 font-size: 16pt;
@@ -168,8 +168,8 @@ main {
     #mask {
         position: absolute;
         top: 200px;
-        left: 5px;
-        width: 1135px;
+        left: 0px;
+        width: 1140px;
         height: 600px;
         background-color: white;
         opacity: 0.8;
@@ -195,11 +195,18 @@ main {
     }
 
     .pointTittle {
-        height: 40px;
+        height: 70px;
 
         P {
-            font-size: 30px;
+            font-size: 22px;
             text-align: center;
+        }
+
+        .spMode {
+            
+            @include sp{
+                font-size: 13px;
+            }
         }
 
     }
@@ -214,7 +221,7 @@ main {
         }
 
     .infomation {
-        height: 50px;
+        height: 40px;
 
 
         .icon {
@@ -243,7 +250,7 @@ main {
     }
 
     .slide {
-        height: 300px;
+        height: 265px;
 
         @include sp {
             height: 200px;
